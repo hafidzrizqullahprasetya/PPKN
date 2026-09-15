@@ -1,27 +1,27 @@
 # Naskah Presentasi (Speaking Script) — Hafidz
 
 **Topik:** D. Membangun Argumen tentang Dinamika dan Tantangan Integrasi Nasional  
-**Nomor Slide di Dokumen:** Slide 14 s.d. 17 pada [Integrasi Nasional.pdf](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/Integrasi%20Nasional.pdf)  
+**Nomor Slide di Dokumen:** Slide 20 s.d. 23 pada [Integrasi Nasional.pdf](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/Integrasi%20Nasional.pdf)  
 **Perkiraan Durasi:** 4 – 5 Menit  
 **Petunjuk:** Naskah ini dirancang untuk dibicarakan secara santai, mengalir, dan analitis. Slide hanya menampilkan poin inti, sehingga tugasmu adalah menjelaskan cerita dan konteks di baliknya tanpa membaca tulisan di slide.
 
 ---
 
-### [Slide 14: Pengantar Dinamika & Tantangan]
+### [Slide 20: Pengantar Dinamika & Tantangan]
 
-*(Ucapkan setelah sesi Studi Kasus / Slide 13 selesai dibacakan)*
+*(Ucapkan setelah pemateri Bagian C selesai menjelaskan tahapan sejarah integrasi di Slide 19)*
 
-"Terima kasih. Berangkat dari studi kasus disintegrasi di Papua tadi, kita bisa melihat bahwa persoalan menjaga persatuan di negara sebesar Indonesia ini bukan sekadar teori, melainkan punya dinamika dan tantangan nyata di lapangan. 
+"Terima kasih. Melanjutkan pemaparan sejarah perkembangan integrasi tadi, setelah bangsa kita berhasil mendobrak penjajahan dan merdeka tahun 1945, tugas besar berikutnya adalah bagaimana merawat integrasi itu dalam praktiknya sehari-hari.
 
-Di buku teks dan modul kuliah kita, pembahasan ini dibagi ke dalam dua fokus utama: bagaimana dinamika perjalanan integrasi sejak tahun 1945, dan apa saja tantangan nyata yang terus kita hadapi sampai hari ini."
+Membangun kesepakatan untuk bersatu itu satu hal, tapi menjaganya tetap kokoh di negara kepulauan yang sangat beragam seperti Indonesia ini punya dinamika dan tantangan tersendiri. Di buku rujukan dan modul kuliah kita, bagian ini dibagi ke dalam dua fokus utama: pertama, bagaimana dinamika perjalanan integrasi sejak 1945; dan kedua, apa saja tantangan nyata yang terus kita hadapi sampai hari ini."
 
 *(Jeda 1 detik, arahkan pandangan ke audiens/dosen)*
 
 ---
 
-### [Slide 15: Wujud Nyata 5 Jenis Integrasi di Indonesia]
+### [Slide 21: Wujud Nyata 5 Jenis Integrasi di Indonesia]
 
-*(Ganti ke Slide 15)*
+*(Ganti ke Slide 21)*
 
 "Kalau teman-teman perhatikan di slide, modul dan buku ajar kita mencatat lima contoh konkret bagaimana lima jenis integrasi tadi dipraktikkan langsung dalam sejarah Indonesia.
 
@@ -37,9 +37,9 @@ Dan kelima, perilaku integratif. Hal ini sudah dimulai sejak sidang PPKI tanggal
 
 ---
 
-### [Slide 16: Tantangan Dimensi Horizontal & Vertikal]
+### [Slide 22: Tantangan Dimensi Horizontal & Vertikal]
 
-*(Ganti ke Slide 16)*
+*(Ganti ke Slide 22)*
 
 "Sekarang kita masuk ke persoalan tantangan. Mengutip analisis Nazaruddin Sjamsuddin dalam modul kita, persoalan integrasi wajar dialami oleh negara-negara baru, dan tantangannya selalu bergerak di dua dimensi: horizontal dan vertikal.
 
@@ -49,9 +49,9 @@ Sementara pada dimensi vertikal, tantangannya adalah jarak antara pengambil kebi
 
 ---
 
-### [Slide 17: Realitas Pasca-Reformasi & Tarikan Era Global]
+### [Slide 23: Realitas Pasca-Reformasi & Tarikan Era Global]
 
-*(Ganti ke Slide 17)*
+*(Ganti ke Slide 23)*
 
 "Di bagian akhir, modul dan buku kita menyoroti situasi setelah tahun 1998 dan masa sekarang.
 
@@ -59,6 +59,6 @@ Setelah Reformasi, ruang kebebasan terbuka lebar. Namun, buku ajar mencatat bahw
 
 Tantangan hari ini makin kompleks karena negara ditarik oleh dua arus sekaligus. Dari luar, globalisasi membuat batas-batas negara terasa makin tipis akibat arus informasi dan ekonomi dunia. Bersamaan dengan itu, dari dalam negeri justru muncul tarikan sebaliknya: sebagian kelompok memperkuat ikatan etnis dan kedaerahan secara eksklusif. Menjaga keseimbangan di antara dua tarikan inilah tugas generasi kita hari ini.
 
-Sekian penjelasan dari bagian saya, selanjutnya materi esensi dan urgensi integrasi nasional akan dilanjutkan oleh Tia di slide berikutnya. Terima kasih."
+Sekian penjelasan dari bagian saya, selanjutnya materi esensi dan urgensi integrasi nasional akan dilanjutkan oleh Tia di slide ke-24. Terima kasih."
 
 *(Serahkan sesi ke pemateri berikutnya / Tia)*

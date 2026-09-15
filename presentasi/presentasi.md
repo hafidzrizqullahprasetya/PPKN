@@ -1,4 +1,4 @@
-# Slide 14: Judul Bagian
+# Slide 20: Judul Bagian
 
 ## Dinamika & Tantangan Integrasi Nasional
 ### Perjalanan Merawat Persatuan Indonesia
@@ -9,7 +9,7 @@
 
 ---
 
-# Slide 15: Praktik 5 Jenis Integrasi di Indonesia
+# Slide 21: Praktik 5 Jenis Integrasi di Indonesia
 
 ## Bukti Nyata Integrasi Nasional
 
@@ -21,7 +21,7 @@
 
 ---
 
-# Slide 16: Dua Dimensi Tantangan Integrasi
+# Slide 22: Dua Dimensi Tantangan Integrasi
 
 ## Dimensi Horizontal vs Dimensi Vertikal
 
@@ -35,7 +35,7 @@
 
 ---
 
-# Slide 17: Realitas Pasca-Reformasi & Era Global
+# Slide 23: Realitas Pasca-Reformasi & Era Global
 
 ## Ujian Integrasi Kontemporer
 

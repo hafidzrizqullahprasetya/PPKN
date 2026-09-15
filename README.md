@@ -15,15 +15,15 @@ PPKN/
 │
 ├── presentasi/                         # Berkas presentasi Bab III (Integrasi Nasional)
 │   ├── Integrasi Nasional.pdf          # File final presentasi (Canva export, 22 slide)
-│   ├── script.md                       # Naskah bicara (speaking script) Hafidz (Slide 14–17)
+│   ├── script.md                       # Naskah bicara (speaking script) Hafidz (Slide 20–23)
 │   ├── materi.md                       # Buku saku materi lengkap Bab III & bank tanya-jawab dosen
-│   ├── presentasi.md                   # Teks poin-poin slide Hafidz
+│   ├── presentasi.md                   # Teks poin-poin slide Hafidz (Slide 20–23)
 │   ├── pembagian-presentasi.md         # Pembagian tugas subtopik anggota kelompok
 │   └── slides-hd/                      # Asset gambar slide kualitas 4K Ultra HD
-│       ├── slide 1.png                 # Slide 14: Pengantar Dinamika & Tantangan
-│       ├── slide 2.png                 # Slide 15: Praktik 5 Jenis Integrasi
-│       ├── slide 3.png                 # Slide 16: Dimensi Horizontal vs Vertikal
-│       └── slide 4.png                 # Slide 17: Realitas Pasca-Reformasi & Era Global
+│       ├── slide 1.png                 # Slide 20: Pengantar Dinamika & Tantangan
+│       ├── slide 2.png                 # Slide 21: Praktik 5 Jenis Integrasi
+│       ├── slide 3.png                 # Slide 22: Dimensi Horizontal vs Vertikal
+│       └── slide 4.png                 # Slide 23: Realitas Pasca-Reformasi & Era Global
 │
 ├── referensi/                          # Sumber rujukan, buku teks, dan modul kuliah
 │   ├── eBook.PendidikanKewarganegaraan.pdf
