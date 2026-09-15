@@ -16,6 +16,7 @@ PPKN/
 ├── presentasi/                         # Berkas presentasi Bab III (Integrasi Nasional)
 │   ├── Integrasi Nasional.pdf          # File final presentasi (Canva export, 22 slide)
 │   ├── script.md                       # Naskah bicara (speaking script) Hafidz (Slide 14–17)
+│   ├── materi.md                       # Buku saku materi lengkap Bab III & bank tanya-jawab dosen
 │   ├── presentasi.md                   # Teks poin-poin slide Hafidz
 │   ├── pembagian-presentasi.md         # Pembagian tugas subtopik anggota kelompok
 │   └── slides-hd/                      # Asset gambar slide kualitas 4K Ultra HD
@@ -47,5 +48,6 @@ PPKN/
 
 - **Melihat Silabus & Penilaian:** Buka [silabus.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/silabus.md)
 - **Materi Presentasi Kelompok:** Buka [presentasi/Integrasi Nasional.pdf](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/Integrasi%20Nasional.pdf)
+- **Buku Saku Materi & Bank Tanya-Jawab:** Buka [presentasi/materi.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/materi.md)
 - **Persiapan Bicara Hafidz:** Buka [presentasi/script.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/script.md)
 - **Ringkasan Teks Slide:** Buka [presentasi/presentasi.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/presentasi.md)
