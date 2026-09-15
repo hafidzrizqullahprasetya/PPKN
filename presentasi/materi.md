@@ -170,6 +170,26 @@ Berikut adalah daftar pertanyaan yang paling sering muncul dalam ujian atau sesi
 - **Cara Menjawab:**
   > "Dalam buku teks dikemukakan bahwa pajak adalah instrumen redistribusi keadilan sosial. Daerah-daerah yang kaya secara ekonomi menyumbang penerimaan pajak lebih besar ke APBN, yang kemudian digunakan pemerintah pusat untuk membangun infrastruktur di daerah tertinggal atau perbatasan (seperti jalan, jembatan, pelabuhan, dan rumah sakit). Ketika warga di pelosok merasakan kehadiran pembangunan dari dana bersama tersebut, mereka merasa diakui sebagai bagian dari satu keluarga besar Indonesia."
 
+### 11. Fenomena Pemindahan Ibu Kota (IKN): Apakah memperkuat integrasi atau memicu kecemburuan baru?
+- **Inti Masalah:** Pemerataan pembangunan teritorial dan paradigma pembangunan Indonesia-sentris vs Jawa-sentris.
+- **Cara Menjawab:**
+  > "Secara konsep, pemindahan IKN ke Kalimantan adalah upaya memperkuat integrasi wilayah dan ekonomi agar tidak lagi 'Jawa-sentris'. Selama puluhan tahun, perputaran uang dan pembangunan terkonsentrasi di Jawa. Namun tantangannya, jika pembangunan IKN menyedot anggaran terlalu besar sementara fasilitas dasar di pelosok daerah lain terabaikan, hal itu berpotensi menimbulkan kecemburuan vertikal baru. Kuncinya ada pada keadilan alokasi anggaran nasional."
+
+### 12. Fenomena "Brain Drain" & Anak Muda Pindah Kewarganegaraan: Apakah ini bentuk disintegrasi terselubung?
+- **Inti Masalah:** Lunturnya komitmen kebangsaan akibat pesimisme terhadap masa depan negara (lapangan kerja, keadilan hukum, dinasti politik).
+- **Cara Menjawab:**
+  > "Fenomena ini adalah sinyal peringatan bagi integrasi vertikal. Integrasi nasional bukan hanya soal wilayah fisik, tetapi juga rasa percaya warga terhadap negaranya. Ketika generasi muda yang kompeten merasa masa depan dan kerja kerasnya tidak dihargai di dalam negeri, komitmen kebangsaan mereka melemah. Ini membuktikan bahwa integrasi nasional tidak bisa dipaksakan dengan doktrin semata; negara harus mampu memberikan harapan hidup yang adil dan layak bagi warganya."
+
+### 13. Fenomena Ormas Kedaerahan yang Menolak Pekerja Luar / Memalak Proyek: Ancaman horizontal atau kelemahan vertikal?
+- **Inti Masalah:** Sentimen fanatisme kedaerahan sempit (*putra daerah*) yang berbenturan dengan integrasi ekonomi nasional.
+- **Cara Menjawab:**
+  > "Fenomena ini berakar pada dimensi horizontal berupa sentimen kedaerahan sempit yang merasa terancam oleh pendatang, tetapi diperparah oleh kegagalan vertikal: lemahnya penegakan hukum dan tingginya angka pengangguran lokal. Solusinya, pemerintah daerah harus memastikan masyarakat lokal dilatih agar terserap di proyek industri, sembari aparat penegak hukum bertindak tegas tanpa kompromi terhadap tindakan pemalakan atau kekerasan yang merusak persatuan."
+
+### 14. Fenomena Polarisasi Politik di Medsos (Pilpres/Pilkada): Kenapa perpecahan antarpendukung sulit sembuh pascapemilu?
+- **Inti Masalah:** Eksploitasi sentimen identitas oleh elit politik dan algoritma ruang gema (*echo chamber*).
+- **Cara Menjawab:**
+  > "Dalam pemikiran Nazaruddin Sjamsuddin, masalah vertikal sering kali sengaja ditarik ke dimensi horizontal oleh elit demi kepentingan politik kekuasaan. Elit politik menggunakan isu suku dan agama untuk memecah massa di bawah. Didukung oleh algoritma media sosial yang memperkuat fanatisme kelompok, gesekan antarwarga menjadi tahan lama meski pemilu sudah usai. Mengobatinya membutuhkan keteladanan rekonsiliasi dari para pemimpin politik dan penguatan integrasi nilai Pancasila yang nyata."
+
 ---
 
 # TIPS PRAKTIS SAAT MENJAWAB PERTANYAAN
