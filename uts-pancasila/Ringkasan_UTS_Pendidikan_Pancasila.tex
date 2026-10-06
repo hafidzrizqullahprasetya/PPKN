@@ -1,0 +1,512 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- Typography & Layout Hygiene (Anti-Slop Standards) ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo} % Palatino font for elegant academic reading
+\usepackage[scaled=0.92]{helvet}
+\usepackage{courier}
+\usepackage[top=1.8cm, bottom=1.9cm, left=2.0cm, right=2.0cm]{geometry}
+\usepackage{microtype}
+\emergencystretch=3em
+\hfuzz=1.5pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
+
+% --- Math & Symbols ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables & Lists ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlist{itemsep=2pt, topsep=3pt, parsep=0pt}
+
+% --- Colors ---
+\usepackage[dvipsnames,table]{xcolor}
+\definecolor{ugmblue}{RGB}{16, 44, 87}
+\definecolor{navyaccent}{RGB}{24, 77, 138}
+\definecolor{ugmgold}{RGB}{197, 148, 47}
+\definecolor{tealbox}{RGB}{13, 110, 110}
+\definecolor{alertred}{RGB}{166, 25, 46}
+\definecolor{bgsoft}{RGB}{247, 249, 252}
+\definecolor{bgwarning}{RGB}{255, 251, 235}
+\definecolor{bgtips}{RGB}{240, 249, 248}
+\definecolor{textdark}{RGB}{33, 37, 41}
+
+% --- Boxes & Styling ---
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{conceptbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgsoft,
+  colframe=ugmblue,
+  arc=3mm,
+  boxrule=1.0pt,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=ugmblue, arc=2mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+\newtcolorbox{examtipbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgwarning,
+  colframe=ugmgold,
+  arc=3mm,
+  boxrule=1.0pt,
+  fonttitle=\bfseries\color{ugmblue},
+  coltitle=ugmblue,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=ugmgold!40, arc=2mm, boxrule=0.5pt, colframe=ugmgold},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+\newtcolorbox{casebox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgtips,
+  colframe=tealbox,
+  arc=3mm,
+  boxrule=1.0pt,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=tealbox, arc=2mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+% --- Section Titles ---
+\usepackage{titlesec}
+\titleformat{\section}
+  {\Large\bfseries\color{ugmblue}}
+  {\thesection}{1em}{}
+  [{\titlerule[0.8pt]}]
+\titleformat{\subsection}
+  {\large\bfseries\color{navyaccent}}
+  {\thesubsection}{0.8em}{}
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{textdark}}
+  {\thesubsubsection}{0.6em}{}
+\titlespacing{\section}{0pt}{9pt plus 2pt minus 2pt}{3pt plus 1pt minus 1pt}
+\titlespacing{\subsection}{0pt}{7pt plus 2pt minus 2pt}{2pt plus 1pt minus 1pt}
+\titlespacing{\subsubsection}{0pt}{5pt plus 1pt minus 1pt}{2pt plus 1pt minus 1pt}
+
+% --- Headers & Footers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\textbf{\color{ugmblue}Pendidikan Pancasila (MKWK UGM)}}
+\fancyhead[R]{\small\color{gray}Master Ringkasan Persiapan UTS}
+\fancyfoot[L]{\footnotesize\color{gray}Semester Gasal | RPKPS Dr. Septiana DM}
+\fancyfoot[R]{\small\textbf{\thepage}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Hyperlinks (xurl loaded before hyperref) ---
+\usepackage{xurl}
+\usepackage[colorlinks=true, linkcolor=ugmblue, urlcolor=navyaccent, citecolor=ugmblue]{hyperref}
+
+\begin{document}
+
+% ==================== HEADER BANNER ====================
+\begin{tcolorbox}[
+  enhanced,
+  colback=ugmblue,
+  colframe=ugmgold,
+  arc=4mm,
+  boxrule=1.5pt,
+  top=5mm, bottom=5mm, left=6mm, right=6mm
+]
+\begin{center}
+  {\color{ugmgold}\Huge\textbf{MASTER RINGKASAN INTENSIF UTS}}\\[2mm]
+  {\color{white}\Large\textbf{MATA KULIAH WAJIB KURIKULUM (MKWK) PENDIDIKAN PANCASILA}}\\[1.5mm]
+  {\color{white!90}\small Universitas Gadjah Mada | Semester Gasal | Koordinator MK: Dr. Septiana Dwiputri Maharani, M.Hum.}
+\end{center}
+\vspace{-1mm}
+\tcbline
+\vspace{-1mm}
+{\color{white}\footnotesize
+\textbf{Cakupan Materi Sesi I (Pra-UTS):} Bab I Pengantar \& Ke-UGM-an $\bullet$ Bab II Sejarah Perumusan Pancasila $\bullet$ Bab III Pancasila Dasar Negara $\bullet$ Bab IV Pancasila Ideologi Negara $\bullet$ Intisari Bab V Sistem Filsafat $\bullet$ Suplemen Isu Aktual (Anti-Korupsi KPK, Radikalisme/Terorisme, Inklusi Pajak) $\bullet$ Prediksi Soal \& Model Jawaban Esai.}
+\end{tcolorbox}
+
+\vspace{2mm}
+
+% ==================== CHEAT SHEET 1 HALAMAN ====================
+\begin{examtipbox}[PETA KONSEP KILAT: MEMORI 10 MENIT SEBELUM MASUK UJIAN]
+\begin{tabularx}{\linewidth}{lX}
+  \textbf{Modul} & \textbf{Kata Kunci \& Konsep Krusial yang Wajib Muncul di Jawaban} \\
+  \midrule
+  \textbf{Bab I (Pengantar)} & 4 Landasan (Historis, Sosiologis, Yuridis UU 12/2012 psl 35, Filosofis); Visi-Misi MKWU; 5 Jati Diri UGM (Universitas Pancasila, Nasional, Perjuangan, Kerakyatan, Pusat Kebudayaan). \\
+  \textbf{Bab II (Sejarah)} & Sidang BPUPKI I (Muh. Yamin, Soepomo, Ir. Soekarno 1 Juni); Panitia Sembilan (Piagam Jakarta 22 Juni); Sidang PPKI 18 Agustus (Penghapusan 7 kata sila I, sah UUD 1945, Soekarno-Hatta); Orla (Dekrit 5 Juli 1959, Nasakom), Orba (P4, asas tunggal), Reformasi (Revitalisasi, BPIP). \\
+  \textbf{Bab III (Dasar Negara)} & \textit{Staatsfundamentalnorm} (Hans Nawiasky); Sumber tertib hukum tertinggi; Hubungan Pembukaan UUD 1945 (Formal \& Material); Penjabaran pasal (Psl 27, 29, 31, 33, 34); Penolakan liberalisme pasar liar \& etatisme sentralistik. \\
+  \textbf{Bab IV (Ideologi)} & Ideologi Terbuka (berakar dari masyarakat, dinamis) vs Tertutup (dogmatis, totaliter); 3 Dimensi Alfian/Koento Wibisono (Realitas, Idealitas, Fleksibilitas); Komparasi (Pancasila vs Liberalisme vs Komunisme). \\
+  \textbf{Bab V (Filsafat)} & Manusia Monopluralis (Notonagoro); 3 Landasan (Ontologis, Epistemologis, Aksiologis); Nilai Material, Vital, Kerohanian; \textit{Genetivus Objectivus} vs \textit{Genetivus Subjectivus}. \\
+  \textbf{Isu Aktual (CPMK 3)} & \textbf{Korupsi:} 7 Delik Tipikor UU 31/1999 jo UU 20/2001; Suap vs Pemerasan vs Gratifikasi; 9 Nilai Integritas KPK. \textbf{Terorisme:} Radikalisme inkonstitusional, ancaman integrasi nasional, kontra-radikalisme via 5 Sila. \textbf{Pajak:} Gotong royong fiskal, keadilan sosial Sila 5, bentuk Bela Negara non-fisik. \\
+  \bottomrule
+\end{tabularx}
+\end{examtipbox}
+
+\vspace{1mm}
+
+% ==================== BAB 1 ====================
+\section{Pengantar Pendidikan Pancasila \& Spirit Ke-UGM-an}
+
+\subsection{Urgensi Pendidikan Pancasila di Perguruan Tinggi}
+Pendidikan Pancasila di perguruan tinggi bukan sekadar indoktrinasi politik masa lalu, melainkan instrumen pembangunan karakter (\textit{character building}) dan penuntun moral intelektual. Urgensi substantifnya berakar dari tantangan riil bangsa:
+\begin{enumerate}
+  \item \textbf{Dekadensi Moral \& Narkoba:} Erosi nilai budi pekerti, individualisme ekstrem, dan maraknya perilaku destruktif di kalangan generasi muda.
+  \item \textbf{Masalah Korupsi:} Tingginya angka tindak pidana korupsi yang justru dilakukan oleh kaum terdidik/sarjana pemegang kekuasaan.
+  \item \textbf{Ancaman Disintegrasi \& Radikalisme:} Menguatnya primordialisme, polarisasi SARA, dan infiltrasi ideologi transnasional yang menolak konsensus kebangsaan.
+  \item \textbf{Ketimpangan Sosial \& Rendahnya Kesadaran Pajak:} Belum terwujudnya keadilan distributif serta rendahnya kesadaran warga negara dalam menopang penerimaan negara secara mandiri.
+\end{enumerate}
+
+\subsection{Empat Landasan Pokok Pendidikan Pancasila}
+\begin{tabularx}{\linewidth}{lX}
+  \toprule
+  \textbf{Landasan} & \textbf{Substansi Akademik \& Rujukan Yuridis/Teoretis} \\
+  \midrule
+  \textbf{1. Historis} & Nilai-nilai Pancasila digali dari bumi nusantara sendiri, berakar pada adat-istiadat, tradisi luhur, dan perjuangan bangsa lintas generasi sejak era Sriwijaya, Majapahit, hingga masa kolonial. Bukan ideologi cangkokan dari luar. \\
+  \textbf{2. Sosiologis} & Berpijak pada kearifan lokal, gotong royong, religiusitas, dan musyawarah yang telah hidup secara organik dalam realitas masyarakat Indonesia yang majemuk (\textit{multicultural society}). \\
+  \textbf{3. Yuridis} & \textbf{Pasal 35 ayat (3) UU No. 12 Tahun 2012} tentang Pendidikan Tinggi: Kurikulum pendidikan tinggi \textbf{wajib} memuat mata kuliah Agama, Pancasila, Kewarganegaraan, dan Bahasa Indonesia. Landasan konstitusional: Pembukaan UUD 1945 alinea IV. \\
+  \textbf{4. Filosofis} & Pancasila sebagai \textit{philosophische grondslag} (pandangan filsafat mendalam) yang menjadi akar kebenaran akal budi dan konsensus luhur bangsa Indonesia dalam bernegara. \\
+  \bottomrule
+\end{tabularx}
+
+\subsection{Muatan Khusus: Jati Diri dan Spirit Ke-UGM-an}
+Sebagai mahasiswa Universitas Gadjah Mada, penguasaan Pancasila diikat langsung dengan jati diri almamater yang lahir di tengah kancah revolusi kemerdekaan (19 Desember 1949):
+\begin{conceptbox}[Lima Jati Diri Universitas Gadjah Mada]
+\begin{itemize}
+  \item \textbf{Universitas Nasional:} Perekat keutuhan NKRI, menyatukan putra-putri dari seluruh pelosok tanah air tanpa diskriminasi suku, agama, dan golongan.
+  \item \textbf{Universitas Perjuangan:} Lahir dari rahim perjuangan kemerdekaan, mewarisi api patriotisme dalam menegakkan kedaulatan bangsa.
+  \item \textbf{Universitas Pancasila:} Menjadikan Pancasila sebagai ruh, pedoman moral, dan orientasi seluruh aktivitas ilmiah dan pengabdian masyarakat.
+  \item \textbf{Universitas Kerakyatan:} Ilmu pengetahuan diabdikan untuk mengangkat harkat kaum tertindas, rakyat miskin, dan mewujudkan kesejahteraan umum.
+  \item \textbf{Universitas Pusat Kebudayaan:} Menggali, melestarikan, dan mengembangkan kebudayaan adiluhung nusantara di tengah arus globalisasi.
+\end{itemize}
+\end{conceptbox}
+
+% ==================== BAB 2 ====================
+\section{Pancasila dalam Kajian Sejarah Bangsa Indonesia}
+
+\subsection{Tiga Periode Krusial Pembentukan Pancasila}
+
+\subsubsection{1. Periode Pengusulan (Sidang I BPUPKI: 29 Mei -- 1 Juni 1945)}
+Sidang Badan Penyelidik Usaha-usaha Persiapan Kemerdekaan Indonesia (BPUPKI) dipimpin oleh Dr. K.R.T. Radjiman Wedyodiningrat yang mengajukan pertanyaan kunci: ``\textit{Apa dasar negara Indonesia merdeka yang akan kita bentuk?}''
+\begin{itemize}
+  \item \textbf{Mr. Muhammad Yamin (29 Mei 1945):}
+    \begin{itemize}
+      \item \textit{Usulan Lisan:} (1) Peri Kebangsaan, (2) Peri Kemanusiaan, (3) Peri Ketuhanan, (4) Peri Kerakyatan, (5) Kesejahteraan Rakyat.
+      \item \textit{Rancangan Tertulis:} Mengajukan 5 sila yang tercantum dalam draf pembukaan UUD.
+    \end{itemize}
+  \item \textbf{Prof. Dr. Soepomo (31 Mei 1945):} Mengajukan gagasan \textbf{Negara Integralistik (Paham Kekeluargaan)}:
+    \begin{itemize}
+      \item Negara tidak memihak golongan terbesar atau terkuat (menolak individualisme liberal Barat dan teori pertentangan kelas Karl Marx).
+      \item Lima prinsip: (1) Persatuan, (2) Kekeluargaan, (3) Keseimbangan lahir dan batin, (4) Musyawarah, (5) Keadilan rakyat.
+    \end{itemize}
+  \item \textbf{Ir. Soekarno (1 Juni 1945):} Pidato monumental tanpa teks yang memperkenalkan istilah resmi \textbf{Pancasila} (\textit{Panca} = lima, \textit{Sila} = asas/dasar):
+    \begin{enumerate}
+      \item Nasionalisme (Kebangsaan Indonesia)
+      \item Internasionalisme (Peri Kemanusiaan)
+      \item Mufakat atau Demokrasi
+      \item Kesejahteraan Sosial
+      \item Ketuhanan yang Berkebudayaan
+    \end{enumerate}
+    \textit{Sintesis Konseptual Soekarno:} 5 Sila dapat diperas menjadi \textbf{Trisila} (\textit{Sosio-nasionalisme}, \textit{Sosio-demokrasi}, dan \textit{Ketuhanan}), dan Trisila dapat diperas lagi menjadi satu intisari yaitu \textbf{Ekasila (Gotong Royong)}.
+\end{itemize}
+
+\subsubsection{2. Periode Perumusan (Panitia Sembilan: 22 Juni 1945)}
+BPUPKI membentuk Panitia Kecil beranggotakan 9 tokoh lintas golongan kebangsaan dan Islam (Ir. Soekarno, Drs. Moh. Hatta, Mr. A.A. Maramis, Abikoesno Tjokrosoejoso, Abdulkahar Moezakir, H. Agus Salim, Mr. Ahmad Soebardjo, K.H. Wachid Hasjim, Mr. Muh. Yamin).
+\begin{itemize}
+  \item Menghasilkan \textbf{Piagam Jakarta (\textit{Jakarta Charter})}.
+  \item Rumusan Sila I berbunyi: \textit{``Ketuhanan dengan kewajiban menjalankan syari'at Islam bagi pemeluk-pemeluknya''} (rumusan 7 kata).
+\end{itemize}
+
+\subsubsection{3. Periode Pengesahan (Sidang PPKI: 18 Agustus 1945)}
+Pada pagi hari 18 Agustus 1945 sebelum sidang Panitia Persiapan Kemerdekaan Indonesia (PPKI), Drs. Mohammad Hatta mengumpulkan para tokoh Islam (Ki Bagus Hadikusumo, Wahid Hasjim, Kasman Singodimedjo, Teuku Moh. Hasan) merespons keberatan tokoh Indonesia bagian timur yang disampaikan opsir Kaigun.
+\begin{conceptbox}[Momentum Kenegarawanan Luhur 18 Agustus 1945]
+Para tokoh Islam dengan jiwa kenegarawanan berjiwa besar demi integrasi dan persatuan bangsa Indonesia sepakat mencoret 7 kata dalam Piagam Jakarta dan menggantinya dengan: \textbf{``Ketuhanan Yang Maha Esa''}.\\
+\textbf{Tiga Keputusan Bersejarah Sidang PPKI 18 Agustus 1945:}
+\begin{enumerate}
+  \item Mengesahkan Undang-Undang Dasar 1945 (termasuk Pembukaan UUD 1945 yang memuat rumusan resmi dan sah Pancasila pada Alinea IV).
+  \item Memilih Ir. Soekarno sebagai Presiden dan Drs. Mohammad Hatta sebagai Wakil Presiden RI.
+  \item Membentuk Komite Nasional Indonesia Pusat (KNIP) untuk membantu tugas Presiden sebelum terbentuknya MPR/DPR hasil pemilu.
+\end{enumerate}
+\end{conceptbox}
+
+\subsection{Dinamika \& Dialektika Pancasila Lintas Rezim}
+\begin{tabularx}{\linewidth}{lX}
+  \toprule
+  \textbf{Era Rezim} & \textbf{Dinamika Politik, Praktik, \& Penyimpangan} \\
+  \midrule
+  \textbf{Orde Lama} (1945--1966) &
+  $\bullet$ Pergantian konstitusi: UUD 1945 $\rightarrow$ Konstitusi RIS 1949 $\rightarrow$ UUDS 1950.\\
+  & $\bullet$ Demokrasi Parlementer / Liberal menimbulkan instabilitas kabinet.\\
+  & $\bullet$ Kebuntuan Konstituante diakhiri \textbf{Dekrit Presiden 5 Juli 1959} (Kembali ke UUD 1945).\\
+  & $\bullet$ Masa Demokrasi Terpimpin terjadi deviasi: penetapan Presiden Seumur Hidup, ideologi Nasakom (Nasionalis, Agama, Komunis) yang menyimpang dari kemurnian Pancasila, hingga pecahnya tragedi G30S/PKI 1965. \\
+  \midrule
+  \textbf{Orde Baru} (1966--1998) &
+  $\bullet$ Komitmen awal: Melaksanakan Pancasila dan UUD 1945 secara murni dan konsekuen.\\
+  & $\bullet$ Pelembagaan ideologi lewat Penataran P4 (\textit{Pedoman Penghayatan dan Pengamalan Pancasila} / Ekaprasetya Pancakarsa) dan kewajiban Asas Tunggal.\\
+  & $\bullet$ Kelemahan fatal: Monopoli tafsir tunggal oleh rezim kekuasaan untuk membungkam oposisi politik (\textit{sakralisasi ideologi}). \\
+  \midrule
+  \textbf{Era Reformasi} (1998--skrg) &
+  $\bullet$ Pencabutan TAP MPR No. II/MPR/1978 (pembubaran BP7 \& penataran P4).\\
+  & $\bullet$ Terjadi fenomena trauma publik dan marginalisasi wacana Pancasila di awal reformasi.\\
+  & $\bullet$ Tantangan baru: Korupsi merajalela, menguatnya politik identitas/SARA, radikalisme, dan disrupsi globalisasi tanpa filter.\\
+  & $\bullet$ Revitalisasi kembali dilakukan dengan pembentukan BPIP (Badan Pembinaan Ideologi Pancasila). \\
+  \bottomrule
+\end{tabularx}
+
+\subsection{Lima Predikat Eksistensial Pancasila}
+\begin{enumerate}
+  \item \textbf{Jiwa Bangsa (\textit{Volksgeist}):} Mengacu pada teori von Savigny bahwa setiap bangsa memiliki jiwanya sendiri. Nilai-nilai Pancasila lahir bersamaan dengan lahirnya bangsa Indonesia.
+  \item \textbf{Kepribadian Bangsa:} Sikap mental, tingkah laku, dan perbuatan masyarakat yang memiliki ciri khas pembeda dari bangsa lain (santun, ramah, gotong royong, religius).
+  \item \textbf{Pandangan Hidup (\textit{Weltanschauung}):} Kristalisasi nilai-nilai yang dijadikan pedoman bersikap dan bertindak dalam menyelesaikan persoalan kehidupan sehari-hari.
+  \item \textbf{Dasar Negara (\textit{Philosophische Grondslag}):} Landasan yuridis formal tempat berpijaknya bangunan negara hukum Indonesia dan sumber tertib hukum tertinggi.
+  \item \textbf{Perjanjian Luhur (\textit{Gentlemen's Agreement}):} Kesepakatan luhur para pendiri bangsa yang mewakili keberagaman seluruh rakyat saat memproklamasikan kemerdekaan dan menetapkan konstitusi pada 18 Agustus 1945.
+\end{enumerate}
+
+% ==================== BAB 3 ====================
+\section{Pancasila sebagai Dasar Negara Republik Indonesia}
+
+\subsection{Pancasila sebagai Norma Fundamental Negara (\textit{Staatsfundamentalnorm})}
+Dalam teori jenjang norma hukum (\textit{Stufentheorie} oleh Hans Kelsen yang dikembangkan Hans Nawiasky melalui \textit{Theorie der rechtlichen Stufenordnung}), tata urutan norma hukum negara tersusun berjenjang:
+\begin{center}
+\textbf{Staatsfundamentalnorm} (Pancasila) $\rightarrow$ \textbf{Staatsgrundgesetz} (Batang Tubuh UUD 1945) $\rightarrow$ \textbf{Formell Gesetz} (UU/Perppu) $\rightarrow$ \textbf{Verordnung \& Autonome Satzung} (PP, Perpres, Perda)
+\end{center}
+\begin{conceptbox}[Implikasi Yuridis Staatsfundamentalnorm]
+Pancasila berkedudukan sebagai \textbf{norma dasar tertinggi} yang keberadaannya mendahului terbentuknya negara dan tidak dapat diubah oleh lembaga bentukan UUD. Semua norma hukum di bawahnya berlaku asas \textit{lex superior derogat legi inferiori} (aturan yang lebih rendah tidak boleh bertentangan dengan Pancasila). Jika UU bertentangan dengan nilai Pancasila dan UUD 1945, dapat dibatalkan melalui mekanisme \textit{Judicial Review} di Mahkamah Konstitusi (MK).
+\end{conceptbox}
+
+\subsection{Hubungan Pancasila dengan Pembukaan UUD 1945}
+\begin{itemize}
+  \item \textbf{Hubungan Formal:} Pancasila tercantum secara eksplisit dalam Alinea IV Pembukaan UUD 1945, menjadikannya norma hukum positif yang mengikat seluruh penyelenggara negara dan warga negara. Mengubah Pembukaan UUD 1945 sama artinya dengan membubarkan NKRI.
+  \item \textbf{Hubungan Material:} Pembukaan UUD 1945 substansinya bersumber dari nilai-nilai luhur Pancasila. Jiwa dan hakikat materiil dari keempat alinea Pembukaan adalah Pancasila itu sendiri.
+\end{itemize}
+
+\subsection{Penjabaran Pancasila dalam Batang Tubuh / Pasal-Pasal UUD NRI 1945}
+\begin{tabularx}{\linewidth}{lX}
+  \toprule
+  \textbf{Dimensi Kehidupan} & \textbf{Pasal-Pasal Kunci UUD 1945 \& Makna Filosofis} \\
+  \midrule
+  \textbf{Religius / Spiritual} & \textbf{Pasal 29 ayat (1) \& (2):} Negara berdasar atas Ketuhanan Yang Maha Esa; negara menjamin kemerdekaan tiap warga memeluk agamanya dan beribadat menurut agamanya itu. \\
+  \textbf{Politik \& Hukum} & \textbf{Pasal 1 ayat (2) \& (3):} Kedaulatan berada di tangan rakyat; Indonesia adalah negara hukum (\textit{rechtsstaat}, bukan \textit{machtsstaat}). \textbf{Pasal 27 ayat (1):} Kesamaan kedudukan warga negara di dalam hukum dan pemerintahan (\textit{equality before the law}). \\
+  \textbf{Ekonomi \& Kesejahteraan} & \textbf{Pasal 33 ayat (1), (2), (3):} Perekonomian disusun atas asas kekeluargaan; cabang produksi strategis dan bumi/air/kekayaan alam dikuasai negara untuk kemakmuran rakyat. Menolak monopoli kapitalistik dan etatisme otoriter. \\
+  \textbf{Sosial \& Budaya} & \textbf{Pasal 31:} Hak warga negara mendapat pendidikan; anggaran wajib minimal 20\%. \textbf{Pasal 32:} Negara memajukan kebudayaan nasional dan menghormati bahasa daerah. \\
+  \textbf{Pertahanan \& Keamanan} & \textbf{Pasal 27 ayat (3) \& Pasal 30:} Hak dan kewajiban tiap warga negara ikut serta dalam upaya bela negara dan pertahanan keamanan melalui Sishankamrata. \\
+  \bottomrule
+\end{tabularx}
+
+% ==================== BAB 4 ====================
+\section{Pancasila sebagai Ideologi Negara / Nasional}
+
+\subsection{Pengertian \& Hakikat Ideologi}
+Istilah ideologi pertama kali dicetuskan oleh filsuf Prancis \textbf{Antoine Destutt de Tracy} (1796) sebagai \textit{science of ideas} (ilmu tentang gagasan). Secara substantif, ideologi adalah seperangkat sistem gagasan, keyakinan, dan nilai-nilai terpadu yang memandu tindakan politik, hukum, sosial, dan ekonomi suatu masyarakat atau bangsa untuk mencapai cita-cita kolektif.
+
+\subsection{Tipologi Ideologi: Terbuka vs. Tertutup}
+\begin{tabularx}{\linewidth}{lXX}
+  \toprule
+  \textbf{Karakteristik} & \textbf{Ideologi Terbuka (Pancasila)} & \textbf{Ideologi Tertutup (Totaliter)} \\
+  \midrule
+  \textbf{Sumber Nilai} & Digali dari kekayaan rohani, moral, dan budaya masyarakatnya sendiri. & Diciptakan oleh sekelompok elit penguasa dan dipaksakan secara dogmatis. \\
+  \textbf{Sifat Nilai} & Nilai dasar tetap abadi, namun nilai instrumental dapat berkembang. & Kaku, beku, mutlak, tidak menerima kritik atau koreksi sama sekali. \\
+  \textbf{Hubungan dg Rakyat} & Menghargai pluralisme, HAM, dan kebebasan berpikir. & Menuntut ketaatan mutlak; membatasi hak asasi dan membasmi keberagaman. \\
+  \textbf{Metode Operasional} & Musyawarah, dialog, dan konsensus demokratis. & Pemaksaan, indoktrinasi ketat, dan hegemoni kekuasaan otoriter. \\
+  \bottomrule
+\end{tabularx}
+
+\subsection{Tiga Dimensi Ideologi Pancasila (Koento Wibisono / Alfian)}
+\begin{enumerate}
+  \item \textbf{Dimensi Realitas:} Menunjukkan bahwa nilai-nilai dasar Pancasila bersumber, hidup, dan berakar nyata dalam adat, budaya, dan praktik keseharian masyarakat Indonesia.
+  \item \textbf{Dimensi Idealitas:} Memuat cita-cita luhur bangsa yang ingin diwujudkan di masa depan pada berbagai bidang kehidupan, sehingga melahirkan harapan, gairah, dan motivasi juang.
+  \item \textbf{Dimensi Fleksibilitas / Pengembangan:} Memiliki kapasitas dinamis untuk membuka dialog dengan perkembangan zaman, ilmu pengetahuan, dan teknologi modern tanpa pernah mengorbankan hakikat nilai dasarnya.
+\end{enumerate}
+
+\subsection{Komparasi Ideologi Pancasila dengan Ideologi Besar Dunia}
+\begin{tabularx}{\linewidth}{lYYY}
+  \toprule
+  \textbf{Aspek Komparasi} & \textbf{Pancasila} & \textbf{Liberalisme / Kapitalisme} & \textbf{Komunisme / Marxisme} \\
+  \midrule
+  \textbf{Kedudukan Individu} & Keseimbangan kodrati antara individu \& masyarakat (Monopluralis). & Mengagungkan kebebasan individu mutlak (\textit{individualism}). & Individu subordinate di bawah kekuasaan kolektif negara/partai. \\
+  \textbf{Sistem Ekonomi} & Demokrasi ekonomi, asas kekeluargaan, peran negara strategis. & Pasar bebas (\textit{laissez-faire}), kapitalisme kompetitif, privatisasi total. & Sentralistik (\textit{command economy}), meniadakan kepemilikan privat. \\
+  \textbf{Agama \& Negara} & Sinergi moral: Negara berketuhanan, toleransi antarumat. & Sekuler murni: Pemisahan mutlak urusan agama dengan negara. & Ateisme historis/materialistik: Agama dianggap candu masyarakat. \\
+  \textbf{Sistem Politik} & Demokrasi Pancasila: Musyawarah mufakat \& perwakilan. & Demokrasi liberal: Pemilu mayoritas, multipartai bebas. & Totaliter: Sistem partai tunggal, kediktatoran proletariat. \\
+  \bottomrule
+\end{tabularx}
+
+% ==================== BAB 5 ====================
+\section{Intisari Pancasila sebagai Sistem Filsafat (Pengayaan Bab V)}
+
+\subsection{Hakikat Berpikir Filsafati \& Pancasila}
+Filsafat Pancasila adalah refleksi kritis dan rasional mengenai Pancasila sebagai dasar negara dan kenyataan budaya bangsa Indonesia dengan tujuan memahami pokok-pokok maknanya secara mendasar:
+\begin{itemize}
+  \item \textbf{Karakteristik Sistem:} (1) Bersifat koheren (runtut tanpa kontradiksi), (2) Menyeluruh (mencakup hakikat eksistensi manusia), (3) Mendasar (menggali akar realitas terdalam), (4) Spekulatif (menghasilkan pandangan sistemik yang teruji).
+  \item \textbf{Hakikat Manusia Mono-pluralis (Notonagoro):}
+    \begin{itemize}
+      \item \textit{Susunan Kodrat:} Terdiri atas Raga (jasmani) dan Jiwa (akal, rasa, karsa).
+      \item \textit{Sifat Kodrat:} Sebagai Makhluk Individu sekaligus Makhluk Sosial.
+      \item \textit{Kedudukan Kodrat:} Sebagai Makhluk yang Berdiri Sendiri sekaligus Ciptaan Tuhan Yang Maha Esa.
+    \end{itemize}
+\end{itemize}
+
+\subsection{Tiga Landasan Filosofis Pancasila}
+\begin{enumerate}
+  \item \textbf{Landasan Ontologis (Hakikat Ada):} Menelaah hakikat manusia Indonesia sebagai subjek pendukung pokok sila-sila Pancasila. Keberadaan Tuhan, manusia, satu, rakyat, dan adil adalah realitas ontologis mutlak.
+  \item \textbf{Landasan Epistemologis (Hakikat Pengetahuan):} Menelaah sumber dan kebenaran Pancasila. Sumber pengetahuan Pancasila digali dari perpaduan antara pengalaman empiris sejarah, rasionalitas akal budi, dan penghayatan religius bangsa.
+  \item \textbf{Landasan Aksiologis (Hakikat Nilai):} Menelaah kemanfaatan dan hierarki nilai moral. Notonagoro membagi nilai menjadi tiga tingkatan:
+    \begin{itemize}
+      \item \textbf{Nilai Material:} Segala sesuatu yang berguna bagi raga/jasmani manusia (makanan, pakaian).
+      \item \textbf{Nilai Vital:} Segala sesuatu yang berguna bagi manusia untuk dapat beraktivitas/bekerja.
+      \item \textbf{Nilai Kerohanian:} Nilai kebenaran (akal), keindahan (estetika), kebaikan/moral (karsa/etika), dan religiusitas/ketuhanan (puncak nilai kerohanian).
+    \end{itemize}
+\end{enumerate}
+
+\subsection{\textit{Genetivus Objectivus} vs \textit{Genetivus Subjectivus}}
+\begin{conceptbox}[Dua Pendekatan Telaah Filsafat Pancasila]
+\begin{itemize}
+  \item \textbf{\textit{Pancasila sebagai Genetivus Objectivus}:} Nilai-nilai Pancasila dijadikan \textbf{objek} kajian filsafat yang dikritisi dan dianalisis menggunakan pisau bedah mazhab-mazhab filsafat dunia (seperti hermeneutika, fenomenologi, atau filsafat hukum Barat).
+  \item \textbf{\textit{Pancasila sebagai Genetivus Subjectivus}:} Nilai-nilai Pancasila dijadikan \textbf{subjek / landasan kritis} untuk menilai, menyaring, dan mengkritisi aliran filsafat lain atau fenomena sosial global kontemporer (seperti neoliberalisme atau materialisme).
+\end{itemize}
+\end{conceptbox}
+
+% ==================== BAB 6 ====================
+\section{Modul Suplemen Isu Aktual \& Studi Kasus (CPMK 3 RPKPS)}
+
+\subsection{Isu Aktual 1: Tindak Pidana Korupsi \& Nilai Integritas KPK}
+Korupsi (\textit{corruptio}) adalah kejahatan luar biasa (\textit{extraordinary crime}) yang merampas hak-hak ekonomi dan sosial warga negara serta meruntuhkan sendi-sendi keadilan.
+
+\subsubsection{1. Matriks Perbedaan Suap, Pemerasan, dan Gratifikasi (Klasik Ujian)}
+\begin{tabularx}{\linewidth}{lYYY}
+  \toprule
+  \textbf{Pembeda} & \textbf{Suap-Menyuap} & \textbf{Pemerasan} & \textbf{Gratifikasi} \\
+  \midrule
+  \textbf{Inisiator} & Berasal dari pihak luar/warga yang ingin membeli keputusan pejabat. & Berasal dari \textbf{pejabat/pegawai negeri} yang memaksa atau memeras warga. & Berasal dari pihak luar yang memberi hadiah kepada pejabat tanpa permintaan awal. \\
+  \textbf{Transaksi} & Ada kesepakatan (\textit{meeting of minds} / \textit{quid pro quo}) di muka. & Terjadi di bawah paksaan atau ancaman kerugian terhadap korban. & Tidak ada kesepakatan di muka; berkaitan erat dengan jabatan si pejabat. \\
+  \textbf{Tindak Pidana} & \textbf{Kedua pihak} (pemberi dan penerima) dipidana. & \textbf{Hanya pelaku pemeras} (pejabat) yang dipidana; korban dilindungi. & Penerima dipidana bila \textbf{tidak lapor KPK dalam tempo 30 hari kerja}. \\
+  \bottomrule
+\end{tabularx}
+
+\subsubsection{2. Tujuh Kelompok Delik Tipikor (UU No. 31/1999 jo UU No. 20/2001)}
+30 bentuk perbuatan pidana korupsi dikelompokkan menjadi 7 kategori: (1) Kerugian keuangan negara, (2) Suap-menyuap, (3) Penggelapan dalam jabatan, (4) Pemerasan, (5) Perbuatan curang, (6) Benturan kepentingan dalam pengadaan, dan (7) Gratifikasi.
+
+\subsubsection{3. Sembilan Nilai Integritas Antikorupsi KPK (Jembatan Keledai: \textit{Jumat Bersepeda KK})}
+\textbf{JU}jur, \textbf{MA}ndiri, \textbf{T}anggung Jawab, \textbf{BER}ani, \textbf{SE}derhana, \textbf{PE}duli, \textbf{D}isiplin, \textbf{A}dil, \textbf{K}erja \textbf{K}eras.
+\begin{conceptbox}[Tinjauan Korupsi dalam Perspektif Sila-Sila Pancasila]
+$\bullet$ \textbf{Sila 1:} Pelanggaran amanah moral kepada Tuhan Yang Maha Melihat.\\
+$\bullet$ \textbf{Sila 2:} Bentuk kezaliman yang menginjak harkat martabat dan hak asasi rakyat.\\
+$\bullet$ \textbf{Sila 3:} Merusak kepercayaan publik dan mengikis kohesi persatuan bangsa.\\
+$\bullet$ \textbf{Sila 4:} Mengkhianati mandat demokrasi kerakyatan demi oligarki dan keuntungan pribadi.\\
+$\bullet$ \textbf{Sila 5:} Menghancurkan keadilan distributif; memiskinkan rakyat dan merampas anggaran publik.
+\end{conceptbox}
+
+\subsection{Isu Aktual 2: Pencegahan Radikalisme \& Terorisme}
+\subsubsection{1. Definisi \& Faktor Pemicu}
+Terorisme adalah perbuatan melawan hukum yang menggunakan kekerasan atau ancaman kekerasan yang menimbulkan suasana teror atau rasa takut secara meluas, yang dapat menimbulkan korban bersifat massal, dan/atau kehancuran terhadap objek-objek vital strategis.
+\begin{itemize}
+  \item \textbf{Faktor Pemikiran/Ideologis:} Pemahaman agama yang sempit/literalis, doktrin takfiri, dan penolakan terhadap konsep negara-bangsa (\textit{nation-state}).
+  \item \textbf{Faktor Sosial-Politik:} Rasa ketidakadilan global/domestik, marjinalisasi kelompok minoritas, dan alienasi generasi muda.
+  \item \textbf{Faktor Ekonomi:} Kemiskinan dan ketimpangan struktural yang dimanfaatkan perekrut ekstremis.
+\end{itemize}
+
+\subsubsection{2. Nilai-Nilai Pancasila sebagai Penangkal Radikalisme}
+\begin{itemize}
+  \item \textbf{Sila 1 (Ketuhanan YME):} Menegaskan bahwa esensi seluruh agama adalah kedamaian (\textit{rahmatan lil 'alamin}), memuliakan kehidupan, dan melarang pemaksaan keyakinan maupun kekerasan.
+  \item \textbf{Sila 2 (Kemanusiaan Adil \& Beradab):} Menghormati HAM dan hak hidup setiap insan tanpa diskriminasi. Terorisme adalah musuh universal kemanusiaan.
+  \item \textbf{Sila 3 (Persatuan Indonesia):} Menguatkan konsensus Bhinneka Tunggal Ika; memupuk moderasi beragama dan kewaspadaan terhadap infiltrasi gerakan transnasional separatis/khilafah.
+  \item \textbf{Sila 4 (Kerakyatan \& Musyawarah):} Mengedepankan jalur dialog dan konstitusi hukum dalam menyelesaikan silang sengketa sosial-politik, bukan moncong senjata dan bom bunuh diri.
+  \item \textbf{Sila 5 (Keadilan Sosial):} Negara wajib menuntaskan kemiskinan dan ketimpangan ekonomi agar tidak menjadi lahan subur propaganda radikalisasi.
+\end{itemize}
+
+\subsection{Isu Aktual 3: Kesadaran \& Inklusi Pajak}
+\begin{casebox}[Pajak sebagai Realisasi Pengamalan Pancasila \& Bela Negara Fiskal]
+\begin{itemize}
+  \item \textbf{Pilar APBN:} Pajak menyumbang lebih dari 75--80\% pendapatan negara dalam APBN. Tanpa kepatuhan pajak warga, negara lumpuh dan pembangunan infrastruktur, fasilitas kesehatan, serta subsidi pendidikan (KIP-Kuliah/Beasiswa) terhenti.
+  \item \textbf{Wujud Sila ke-5 (Keadilan Sosial):} Pajak menerapkan prinsip \textit{redistribusi pendapatan} (yang kaya membayar lebih besar secara progresif untuk membiayai fasilitas publik bagi warga yang kurang mampu).
+  \item \textbf{Wujud Sila ke-3 (Persatuan \& Gotong Royong):} Pajak adalah bentuk gotong royong nasional era modern; membuktikan solidaritas kebangsaan lintas pulau dan generasi.
+  \item \textbf{Pajak sebagai Bela Negara:} Di masa damai tanpa perang militer, bentuk bela negara paling nyata dari generasi terpelajar dan kaum profesional adalah taat pajak.
+\end{itemize}
+\end{casebox}
+
+% ==================== BAB 7 ====================
+\section{Bank Soal Prediksi UTS, Kisi-Kisi, \& Model Jawaban Esai}
+
+\subsection{Soal 1: Pancasila sebagai Staatsfundamentalnorm}
+\textbf{Pertanyaan:} \textit{Jelaskan mengapa Pancasila disebut sebagai Staatsfundamentalnorm dan bagaimana konsekuensinya terhadap pembentukan peraturan perundang-undangan di Indonesia!}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Mengacu pada teori jenjang norma Hans Nawiasky, Pancasila berkedudukan sebagai \textit{Staatsfundamentalnorm} (norma fundamental negara) karena menjadi landasan filosofis berdirinya Republik Indonesia yang ditetapkan oleh para pendiri bangsa pada 18 Agustus 1945. Kedudukannya berada di puncak hierarki piramida hukum, di atas UUD 1945 (\textit{Staatsgrundgesetz}).\\
+\textbf{Dua Konsekuensi Yuridis:}\\
+1. \textit{Sumber Segala Sumber Hukum:} Semua substansi hukum nasional (UU, Perppu, PP, Perda) wajib bersumber material dan bermuara moral pada nilai-nilai Pancasila.\\
+2. \textit{Prinsip Validitas:} Aturan hukum yang lebih rendah tidak boleh bertentangan dengan norma di atasnya. Apabila suatu Undang-Undang bertentangan dengan nilai Pancasila dan UUD 1945, maka norma tersebut cacat hukum dan dapat dibatalkan melalui uji materiil (\textit{Judicial Review}) oleh Mahkamah Konstitusi.
+\end{conceptbox}
+
+\subsection{Soal 2: Kompromi Bersejarah Piagam Jakarta ke Pembukaan UUD 1945}
+\textbf{Pertanyaan:} \textit{Analisislah proses peralihan dari rumusan Piagam Jakarta 22 Juni 1945 menjadi rumusan resmi 18 Agustus 1945 serta nilai keteladanan yang dapat dipetik!}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Piagam Jakarta mencantumkan rumusan sila pertama: \textit{``Ketuhanan dengan kewajiban menjalankan syari'at Islam bagi pemeluk-pemeluknya''}. Pada pagi hari 18 Agustus 1945, Mohammad Hatta menerima aspirasi dari tokoh-tokoh Indonesia Timur yang menyatakan bahwa klausul 7 kata tersebut bersifat diskriminatif dan berpotensi memisahkan Indonesia Timur dari NKRI.\\
+\textbf{Keteladanan dan Hikmah Kebangsaan:}\\
+1. \textit{Jiwa Kenegarawanan \& Toleransi Tinggi:} Para tokoh Islam (Ki Bagus Hadikusumo, Wahid Hasjim, Kasman Singodimedjo) berjiwa besar rela menghapus 7 kata demi menyelamatkan integrasi nasional.\\
+2. \textit{Prinsip Negara Inklusif:} Indonesia didirikan bukan sebagai negara teokrasi agama tertentu dan bukan pula negara sekuler ateis, melainkan negara kesatuan berketuhanan yang menaungi seluruh keragaman warga negara (\textit{civic nationalism}).
+\end{conceptbox}
+
+\subsection{Soal 3: Pancasila sebagai Ideologi Terbuka menghadapi Globalisasi}
+\textbf{Pertanyaan:} \textit{Mengapa Pancasila dikategorikan sebagai ideologi terbuka? Bagaimana mengaktualisasikan tiga dimensinya di era disrupsi digital dan globalisasi?}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Pancasila adalah ideologi terbuka karena nilai-nilainya berakar dari kepribadian masyarakat sendiri (bukan doktrin kaku penguasa) dan memiliki keluwesan merespons perubahan zaman melalui tiga dimensi (Alfian):\\
+1. \textbf{Dimensi Realitas:} Praktik pengamalan Pancasila harus tetap membumi di tengah gaya hidup digital modern (misal: menjaga sopan santun dan etika bermedia sosial, tidak menyebarkan fitnah/hoaks).\\
+2. \textbf{Dimensi Idealitas:} Nilai Pancasila tetap memberi visi arah pembangunan bangsa agar kemajuan IPTEK tidak mengorbankan martabat manusia (humanis) dan keadilan sosial.\\
+3. \textbf{Dimensi Fleksibilitas:} Pancasila membuka diri menyerap inovasi teknologi dan ilmu pengetahuan global dengan filter nilai dasar Pancasila agar jati diri bangsa tidak tergerus.
+\end{conceptbox}
+
+\subsection{Soal 4: Analisis Korupsi dalam Perspektif Sila-Sila Pancasila}
+\textbf{Pertanyaan:} \textit{Uraikan secara komprehensif mengapa tindak pidana korupsi merupakan pengkhianatan langsung terhadap seluruh sila dalam Pancasila!}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Korupsi bukan sekadar tindak pidana kerugian finansial negara, melainkan kejahatan eksistensial terhadap ideologi negara:\\
+$\bullet$ \textit{Sila 1:} Pelaku korupsi menuhankan materi dan mengabaikan sumpah jabatan di hadapan Tuhan Yang Maha Esa.\\
+$\bullet$ \textit{Sila 2:} Korupsi merampas hak hidup layak masyarakat miskin; dana kesehatan atau bansos yang dikorupsi berakibat langsung pada penderitaan fisik sesama manusia.\\
+$\bullet$ \textit{Sila 3:} Korupsi merusak ikatan kepercayaan sosial antarwarga negara dan menumbuhkan rasa ketidakadilan kedaerahan yang mengancam persatuan.\\
+$\bullet$ \textit{Sila 4:} Penyelenggara negara korup menyalahgunakan amanah kedaulatan rakyat demi melayani kepentingan oligarki.\\
+$\bullet$ \textit{Sila 5:} Korupsi adalah antitesis keadilan sosial; memperkaya segelintir koruptor sembari memiskinkan jutaan rakyat Indonesia.
+\end{conceptbox}
+
+\subsection{Soal 5: Radikalisme, Terorisme, dan Ketahanan Ideologi}
+\textbf{Pertanyaan:} \textit{Mengapa paham radikalisme-terorisme mengancam eksistensi Pancasila dan bagaimana strategi kontra-radikalisasi berbasis nilai-nilai Pancasila di lingkungan kampus?}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Radikalisme dan terorisme bertentangan secara diametral dengan Pancasila karena memaksakan kehendak dengan kekerasan, menolak konsensus kebangsaan Bhinneka Tunggal Ika, dan merusak kohesi sosial (\textit{Sila 2 dan Sila 3}).\\
+\textbf{Strategi Kontra-Radikalisasi di Kampus:}\\
+1. \textit{Penguatan Literasi Kritis:} Mengembangkan iklim mimbar akademik yang terbuka dan dialogis sehingga paham ekstremis tidak berkembang di ruang tertutup.\\
+2. \textit{Moderasi Beragama:} Menumbuhkan sikap toleransi aktif yang membedakan antara kesalehan pribadi dan penghormatan terhadap kemajemukan bangsa (\textit{Sila 1}).\\
+3. \textit{Keterlibatan Sosial \& Empati:} Menyalurkan energi idealisme mahasiswa ke dalam pengabdian masyarakat nyata (PBL/KKN) untuk menyelesaikan ketimpangan sosial riil.
+\end{conceptbox}
+
+\subsection{Soal 6: Kesadaran Pajak sebagai Bentuk Modern Bela Negara}
+\textbf{Pertanyaan:} \textit{Bagaimana kaitan antara kepatuhan membayar pajak dengan implementasi nilai keadilan sosial dan konsep Bela Negara di era pasca-kemerdekaan?}
+\begin{conceptbox}[Model Jawaban Bernilai Tinggi]
+\textbf{Jawaban Inti:} Dalam konsepsi modern, bela negara tidak lagi dimaknai semata-mata memanggul senjata dalam peperangan fisik, melainkan menjaga keberlangsungan kedaulatan dan pembangunan bangsa melalui instrumen fiskal:\\
+1. \textit{Perwujudan Keadilan Sosial (Sila 5):} Pajak memfungsikan asas gotong royong nasional melalui mekanisme redistribusi pendapatan; warga yang mampu secara ekonomi menopang penyediaan layanan dasar publik (kesehatan, pendidikan, subsidi transportasi) bagi masyarakat rentan.\\
+2. \textit{Kemandirian Bangsa:} Kepatuhan pajak membebaskan Indonesia dari ketergantungan utang luar negeri, sehingga kedaulatan politik dan martabat bangsa tetap tegak di kancah pergaulan global.
+\end{conceptbox}
+
+\begin{examtipbox}[RUMUS 3 TAHAP MENJAWAB SOAL ESAI UTS AGAR MENDAPAT NILAI A]
+\begin{enumerate}
+  \item \textbf{Tahap 1: Landasan Konseptual \& Rujukan Yuridis/Teoretis} $\rightarrow$ Buka jawaban dengan definisi lugas, nama tokoh/pencetus (misal: Hans Nawiasky, Notonagoro, Koento Wibisono, Ir. Soekarno), serta pasal/dasar hukum terkait (misal: UU 12/2012 psl 35, Pembukaan UUD 1945 alinea IV).
+  \item \textbf{Tahap 2: Argumentasi Dialektis \& Analisis Dinamika} $\rightarrow$ Jelaskan mengapa konsep tersebut penting dan bagaimana dinamikanya dalam praktik ketatanegaraan (kemukakan fakta empiris atau perbandingan kasus).
+  \item \textbf{Tahap 3: Solutif \& Sintesis Berbasis Nilai Pancasila} $\rightarrow$ Tutup dengan sintesis nilai Pancasila dan sikap moral sebagai insan akademis (mahasiswa UGM) dalam memberikan solusi konstruktif bagi bangsa.
+\end{enumerate}
+\end{examtipbox}
+
+\vspace{3mm}
+\begin{center}
+  \rule{0.5\linewidth}{0.6pt}\\[2mm]
+  {\small\bfseries\color{ugmblue}Selamat Menempuh UTS! Junjung Tinggi Integritas, Kejujuran, \& Semangat Juang Kerakyatan UGM!}\\[1mm]
+  {\footnotesize\color{gray}Dokumen ini disusun otomatis berdasarkan RPKPS UGM \& Modul Kuliah Resmi Dikti 2026.}
+\end{center}
+
+\end{document}

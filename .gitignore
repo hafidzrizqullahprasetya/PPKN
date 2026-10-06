@@ -12,3 +12,14 @@ Thumbs.db
 *.bak
 *.swp
 *~
+
+# LaTeX Build Artifacts
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+page-*.png
+JADWAL_UTS.md

@@ -1,8 +1,8 @@
-# Dokumentasi Perkuliahan Pendidikan Kewarganegaraan (PPKN)
+# Dokumentasi Perkuliahan MKWK Pendidikan Pancasila & Kewarganegaraan (PPKN)
 
-**Semester Gasal T.A. 2026/2027**  
-**Dosen Pengampu:** Dr. Septiana Dwiputri Maharani, S.S., M.Hum.  
-**Mata Kuliah:** UNU222012 (2 SKS/Wajib)  
+**Universitas Gadjah Mada | Semester Gasal T.A. 2026/2027**  
+**Dosen Pengampu / Koordinator MK:** Dr. Septiana Dwiputri Maharani, S.S., M.Hum.  
+**Mata Kuliah:** MKWK Wajib Kurikulum  
 
 ---
 
@@ -10,44 +10,53 @@
 
 ```text
 PPKN/
-├── README.md                           # Dokumentasi dan panduan navigasi repositori
-├── silabus.md                          # Rencana Pembelajaran Semester (RPS) & Silabus
+├── README.md                                      # Dokumentasi dan panduan navigasi repositori
+├── silabus.md                                     # Silabus & Jadwal Perkuliahan Sesi I & II
+├── .gitignore                                     # Filter file OS & build artifacts LaTeX
 │
-├── presentasi/                         # Berkas presentasi Bab III (Integrasi Nasional)
-│   ├── Integrasi Nasional.pdf          # File final presentasi (Canva export, 22 slide)
-│   ├── script.md                       # Naskah bicara (speaking script) Hafidz (Slide 20–23)
-│   ├── materi.md                       # Buku saku materi lengkap Bab III & bank tanya-jawab dosen
-│   ├── presentasi.md                   # Teks poin-poin slide Hafidz (Slide 20–23)
-│   ├── pembagian-presentasi.md         # Pembagian tugas subtopik anggota kelompok
-│   └── slides-hd/                      # Asset gambar slide kualitas 4K Ultra HD
-│       ├── slide 1.png                 # Slide 20: Pengantar Dinamika & Tantangan
-│       ├── slide 2.png                 # Slide 21: Praktik 5 Jenis Integrasi
-│       ├── slide 3.png                 # Slide 22: Dimensi Horizontal vs Vertikal
-│       └── slide 4.png                 # Slide 23: Realitas Pasca-Reformasi & Era Global
+├── uts-pancasila/                                 # 🎯 Modul Persiapan Ujian Tengah Semester (Pancasila)
+│   ├── Ringkasan_UTS_Pendidikan_Pancasila.pdf     # Ringkasan komprehensif materi & bank soal esai (9 hal)
+│   ├── Ringkasan_UTS_Pendidikan_Pancasila.tex     # Master source code LaTeX
+│   └── silabus-rpkps.pdf                          # RPKPS resmi kelas Pendidikan Pancasila UGM
 │
-├── referensi/                          # Sumber rujukan, buku teks, dan modul kuliah
-│   ├── eBook.PendidikanKewarganegaraan.pdf
-│   ├── Buku-Modul-MKWK-Pendidikan-Kewarganegaraan.pdf
-│   ├── Landasan Pendidikan PKn.pdf
-│   ├── Silabi PKN Gasal 20262027.pdf
+├── presentasi-pkn/                                # 🗣️ Berkas Presentasi Kelompok (Integrasi Nasional)
+│   ├── Integrasi Nasional.pdf                     # File final presentasi (Canva export, 22 slide)
+│   ├── script.md                                  # Naskah bicara (speaking script) Hafidz (Slide 20–23)
+│   ├── materi.md                                  # Buku saku materi lengkap Bab III & bank tanya-jawab dosen
+│   ├── presentasi.md                              # Teks poin-poin slide Hafidz (Slide 20–23)
+│   ├── pembagian-presentasi.md                    # Pembagian tugas subtopik anggota kelompok
+│   └── slides-hd/                                 # Asset gambar slide kualitas 4K Ultra HD
+│       ├── slide 1.png                            # Slide 20: Pengantar Dinamika & Tantangan
+│       ├── slide 2.png                            # Slide 21: Praktik 5 Jenis Integrasi
+│       ├── slide 3.png                            # Slide 22: Dimensi Horizontal vs Vertikal
+│       └── slide 4.png                            # Slide 23: Realitas Pasca-Reformasi & Era Global
+│
+├── referensi/                                     # 📚 Sumber Rujukan, Buku Teks, dan Modul Kuliah
+│   ├── pancasila/                                 # Sumber rujukan mata kuliah Pendidikan Pancasila
+│   │   ├── Buku-Ajar-Pendidikan-Pancasila-Dikti.pdf # Buku ajar MKWU Dikti 2016 (tim dosen Filsafat UGM)
+│   │   └── isu-aktual/                            # Suplemen studi kasus (CPMK 3 RPKPS)
+│   │       ├── Pengetahuan-Dasar-Antikorupsi-KPK.pdf
+│   │       ├── Terorisme-Tinjauan-Nilai-Pancasila.pdf
+│   │       └── Inklusi-Kesadaran-Pajak.pdf
 │   │
-│   └── bab3/                          # Ekstraksi materi khusus Bab III (Integrasi Nasional)
-│       ├── ebook-bab3.pdf              # Potongan Bab III dari E-Book Dikti (hal. 68–99)
-│       ├── ebook-bab3.md               # Transkrip lengkap Bab III E-Book
-│       ├── modul-bab-3.pdf             # Potongan KB III dari Modul MKWK (hal. 43–58)
-│       └── modul-bab-3.md              # Transkrip lengkap KB III Modul MKWK
+│   └── kewarganegaraan/                           # Sumber rujukan mata kuliah Pendidikan Kewarganegaraan
+│       ├── eBook-Pendidikan-Kewarganegaraan.pdf
+│       ├── Buku-Modul-MKWK-Kewarganegaraan.pdf
+│       ├── Landasan-Pendidikan-PKn.pdf
+│       ├── Silabi-PKN-Gasal-2026.pdf
+│       └── bab3/                                  # Ekstraksi modul khusus Bab III (Integrasi Nasional)
+│           ├── ebook-bab3.pdf & ebook-bab3.md
+│           └── modul-bab-3.pdf & modul-bab-3.md
 │
-└── .agents/                            # Konfigurasi agen AI & kustomisasi lokal
-    └── skills/
-        └── humanizer/                  # Skill pemoles gaya bahasa alami (anti-AI writing)
+└── .agents/                                       # Konfigurasi skill agen AI
 ```
 
 ---
 
 ## Panduan Cepat
 
-- **Melihat Silabus & Penilaian:** Buka [silabus.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/silabus.md)
-- **Materi Presentasi Kelompok:** Buka [presentasi/Integrasi Nasional.pdf](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/Integrasi%20Nasional.pdf)
-- **Buku Saku Materi & Bank Tanya-Jawab:** Buka [presentasi/materi.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/materi.md)
-- **Persiapan Bicara Hafidz:** Buka [presentasi/script.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/script.md)
-- **Ringkasan Teks Slide:** Buka [presentasi/presentasi.md](file:///Users/fizualstd/Documents/GitHub/_KULIAH/PPKN/presentasi/presentasi.md)
+- **Persiapan UTS Pancasila (PDF Siap Baca):** Buka [uts-pancasila/Ringkasan_UTS_Pendidikan_Pancasila.pdf](uts-pancasila/Ringkasan_UTS_Pendidikan_Pancasila.pdf)
+- **Melihat RPKPS Kelas:** Buka [uts-pancasila/silabus-rpkps.pdf](uts-pancasila/silabus-rpkps.pdf) atau [silabus.md](silabus.md)
+- **Materi Presentasi Kelompok:** Buka [presentasi-pkn/Integrasi Nasional.pdf](presentasi-pkn/Integrasi%20Nasional.pdf)
+- **Buku Saku Presentasi & Tanya-Jawab:** Buka [presentasi-pkn/materi.md](presentasi-pkn/materi.md)
+- **Speaking Script Hafidz:** Buka [presentasi-pkn/script.md](presentasi-pkn/script.md)
