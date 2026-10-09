@@ -1,0 +1,474 @@
+\documentclass[10pt,a4paper]{article}
+
+% --- Typography & Layout Standards ---
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+\usepackage[scaled=0.92]{helvet}
+\usepackage{courier}
+\usepackage[top=1.8cm, bottom=1.9cm, left=2.0cm, right=2.0cm]{geometry}
+\usepackage{microtype}
+\emergencystretch=3em
+\hfuzz=1.5pt
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{3pt plus 1pt minus 1pt}
+
+% --- Math & Symbols ---
+\usepackage{amsmath,amssymb}
+
+% --- Tables & Lists ---
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{enumitem}
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X}
+\setlist{itemsep=2pt, topsep=3pt, parsep=0pt}
+
+% --- Colors (UGM Academic Palette) ---
+\usepackage[dvipsnames,table]{xcolor}
+\definecolor{ugmblue}{RGB}{16, 44, 87}
+\definecolor{navyaccent}{RGB}{24, 77, 138}
+\definecolor{ugmgold}{RGB}{197, 148, 47}
+\definecolor{tealbox}{RGB}{13, 110, 110}
+\definecolor{alertred}{RGB}{166, 25, 46}
+\definecolor{bgsoft}{RGB}{247, 249, 252}
+\definecolor{bgwarning}{RGB}{255, 251, 235}
+\definecolor{bgtips}{RGB}{240, 249, 248}
+\definecolor{textdark}{RGB}{33, 37, 41}
+
+% --- Boxes & Styling ---
+\usepackage{tcolorbox}
+\tcbuselibrary{skins,breakable}
+
+\newtcolorbox{conceptbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgsoft,
+  colframe=ugmblue,
+  arc=2.5mm,
+  boxrule=0.9pt,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=ugmblue, arc=1.5mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+\newtcolorbox{examtipbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgwarning,
+  colframe=ugmgold,
+  arc=2.5mm,
+  boxrule=0.9pt,
+  fonttitle=\bfseries\color{black},
+  coltitle=black,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=ugmgold, arc=1.5mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+\newtcolorbox{kasusbox}[1][]{
+  enhanced,
+  breakable,
+  colback=bgtips,
+  colframe=tealbox,
+  arc=2.5mm,
+  boxrule=0.9pt,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=tealbox, arc=1.5mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+\newtcolorbox{soalbox}[1][]{
+  enhanced,
+  breakable,
+  colback=white,
+  colframe=navyaccent,
+  arc=2.5mm,
+  boxrule=0.9pt,
+  fonttitle=\bfseries\color{white},
+  coltitle=white,
+  attach boxed title to top left={yshift=-2mm, xshift=4mm},
+  boxed title style={colback=navyaccent, arc=1.5mm, boxrule=0pt},
+  title={#1},
+  top=4mm, bottom=3mm, left=3mm, right=3mm
+}
+
+% --- Headers & Footers ---
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\small\bfseries\color{ugmblue}Pendidikan Kewarganegaraan (UNKU260009 / UNU1100)}
+\fancyhead[R]{\small\color{gray}Master Ringkasan \& Bank Soal UTS Gasal 2026/2027}
+\fancyfoot[L]{\small\color{gray}Sekolah Vokasi UGM -- Departemen TEDI -- Sarjana Terapan TRPL}
+\fancyfoot[R]{\small\bfseries\color{ugmblue}\thepage}
+\renewcommand{\headrulewidth}{0.6pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+% --- Hyperlinks ---
+\usepackage{hyperref}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=navyaccent,
+  urlcolor=tealbox,
+  citecolor=alertred
+}
+
+% --- Document Metadata ---
+\title{\vspace{-1.2cm}
+  {\Large\textbf{UNIVERSITAS GADJAH MADA -- SEKOLAH VOKASI}}\\[1mm]
+  {\large\textbf{DEPARTEMEN TEKNIK ELEKTRO DAN INFORMATIKA (TEDI)}}\\[2mm]
+  {\color{ugmblue}\Huge\textbf{MASTER RINGKASAN INTENSIF UTS}}\\[1mm]
+  {\color{ugmgold}\LARGE\textbf{PENDIDIKAN KEWARGANEGARAAN (PKN)}}\\[2mm]
+  {\normalsize\textbf{Pedoman Belajar Mandiri, Bedah Teori Buku Sumber, Analisis Kasus, dan Bank Soal Esai Nilai A}}
+}
+\author{\textbf{Hafidz Rizqullah Prasetya} (NIM: 24/535493/SV/24243) $\bullet$ Kelas PL5A1 / PKN38\\
+Dosen Pengampu: \textbf{Dr. Septiana Dwiputri Maharani, S.S., M.Hum.}}
+\date{Semester Gasal T.A. 2026/2027 $\bullet$ Ujian Tengah Semester (Jumat, 09 Oktober 2026)}
+
+\begin{document}
+\maketitle
+\vspace{-4mm}
+
+\begin{tcolorbox}[colback=ugmblue!5, colframe=ugmblue, arc=2mm, boxrule=0.7pt, left=3mm, right=3mm, top=2mm, bottom=2mm]
+\small
+\textbf{Cakupan Materi Resmi UTS (Silabus Minggu 2 s.d. 6):}\\
+$\bullet$ \textbf{Bab I:} Hakikat \& Landasan PKn bagi Sarjana/Profesional $\bullet$ \textbf{Bab II:} Esensi \& Urgensi Identitas Nasional $\bullet$ \textbf{Bab III:} Urgensi Integrasi Nasional Parameter Persatuan $\bullet$ \textbf{Bab IV:} Nilai \& Norma Konstitusional UUD NRI 1945 $\bullet$ \textbf{Bab V:} Harmoni Kewajiban \& Hak Negara dan Warga Negara $\bullet$ \textbf{Bank Soal:}\\
+5 Simulasi Soal Esai Standar UGM beserta Model Jawaban Komprehensif Berbasis First Principles.
+\end{tcolorbox}
+
+\vspace{1mm}
+
+% =========================================================================
+\section{Bab I: Hakikat \& Landasan Pendidikan Kewarganegaraan}
+% =========================================================================
+
+\begin{conceptbox}[1.1 Konsep Dasar dan Urgensi bagi Sarjana/Profesional]
+Pendidikan Kewarganegaraan (PKn) di perguruan tinggi bukan sekadar pengulangan materi sekolah menengah, melainkan proses pembentukan kematangan intelektual dan kebajikan kewargaan (\textit{civic virtue}) bagi calon sarjana dan profesional.
+\begin{itemize}
+  \item \textbf{M. Nu'man Somantri (2001):} PKn adalah program pendidikan berintikan demokrasi politik yang diperluas dengan sumber pengetahuan lain, pengaruh positif pendidikan sekolah, masyarakat, dan orang tua, guna melatih mahasiswa berpikir kritis, analitis, bersikap dan bertindak demokratis berdasarkan Pancasila dan UUD 1945.
+  \item \textbf{John J. Cogan (1998):} Membedakan \textit{civic education} (pembelajaran kewargaan formal di kelas) dengan \textit{citizenship education} (pengalaman kewargaan yang lebih luas melalui keterlibatan sosial di tengah komunitas masyarakat).
+  \item \textbf{Urgensi bagi Sarjana:} Sarjana merupakan calon pemimpin bangsa dan teknokrat. Keahlian teknis (\textit{hard skills}) tanpa dibarengi kecerdasan kewargaan (\textit{civic intelligence}) dan tanggung jawab moral (\textit{civic responsibility}) berpotensi melahirkan teknokrat yang korup atau abai terhadap kepentingan nasional.
+\end{itemize}
+\end{conceptbox}
+
+\begin{conceptbox}[1.2 Tiga Sumber Landasan Penelusuran PKn]
+Buku ajar resmi Dikti membedah landasan penelusuran PKn ke dalam tiga dimensi utama:
+\begin{enumerate}
+  \item \textbf{Sumber Historis:} Dimulai dari tonggak Kebangkitan Nasional (Boedi Oetomo 1908), Sumpah Pemuda 1928, hingga Proklamasi 1945. PKn bermula dari pendidikan kebangsaan untuk melawan penjajahan, lalu bertransformasi pada masa kemerdekaan menjadi \textit{Civics} (1961), Pendidikan Kewargaan Negara (1968), Pendidikan Moral Pancasila/PMP (1975), PPKn (1994), hingga PKn era Reformasi.
+  \item \textbf{Sumber Sosiologis:} Kebutuhan sosiologis masyarakat Indonesia yang luar biasa majemuk (plural). Kemajemukan suku, bahasa, adat, dan agama menuntut adanya instrumen perekat kultural agar integrasi sosial tetap terpelihara di tengah pergolakan transisi sosial.
+  \item \textbf{Sumber Politis:} Dokumen konstitusi dan regulasi formal negara:
+  \begin{itemize}
+    \item Pembukaan UUD 1945 Alinea IV: Mandat melindungi segenap bangsa dan memajukan kesejahteraan umum serta mencerdaskan kehidupan bangsa.
+    \item UU No. 20 Tahun 2003 tentang Sisdiknas (Pasal 37): Kurikulum wajib memuat Pendidikan Kewarganegaraan untuk menumbuhkan rasa kebangsaan dan cinta tanah air.
+    \item UU No. 12 Tahun 2012 tentang Pendidikan Tinggi (Pasal 35 ayat 3): Wajib menyelenggarakan mata kuliah Agama, Pancasila, Kewarganegaraan, dan Bahasa Indonesia.
+  \end{itemize}
+\end{enumerate}
+\end{conceptbox}
+
+\begin{examtipbox}[Kunci Analisis Dosen untuk Bab I]
+Jika muncul soal: \textit{"Mengapa mahasiswa sarjana teknik/komputer masih wajib mengambil PKn?"}\\
+\textbf{Arah Jawaban:} Gunakan argumen bahwa kemajuan teknologi informasi melahirkan tantangan baru (kejahatan siber, privasi data, disinformasi, monopoli ekonomi digital). Sarjana bukan sekadar operator alat, melainkan arsitek sosial yang kebijakannya berdampak pada kedaulatan negara. PKn membekali \textit{civic disposition} (karakter kewargaan) agar inovasi teknologi diarahkan untuk kesejahteraan rakyat banyak, bukan eksploitasi.
+\end{examtipbox}
+
+% =========================================================================
+\section{Bab II: Esensi \& Urgensi Identitas Nasional}
+% =========================================================================
+
+\begin{conceptbox}[2.1 Konsep, Hakikat, dan Unsur Identitas Nasional]
+Identitas Nasional secara etimologis berasal dari kata \textit{identity} (ciri, tanda, atau jati diri pembeda) dan \textit{national} (merujuk pada persekutuan hidup bangsa yang diikat oleh kesamaan cita-cita, budaya, dan sejarah).
+\begin{itemize}
+  \item \textbf{Koento Wibisono (2005):} Identitas nasional adalah manifestasi nilai-nilai budaya yang tumbuh dan berkembang dalam berbagai aspek kehidupan bangsa dengan ciri-ciri khas, yang membedakannya dengan bangsa lain.
+  \item \textbf{Identitas Primer vs. Identitas Sekunder:}
+  \begin{itemize}
+    \item \textbf{Identitas Primer (Kultural):} Identitas kesukubangsaan yang melekat sejak lahir (etnis, bahasa daerah, adat istiadat, kearifan lokal).
+    \item \textbf{Identitas Sekunder (Nasional):} Identitas kebangsaan yang disepakati bersama secara sadar melalui konsensus politik kebangsaan melintasi batas-batas primordial.
+  \end{itemize}
+  \item \textbf{Tiga Unsur Identitas Nasional Indonesia:}
+  \begin{enumerate}
+    \item \textbf{Identitas Fundamental:} Pancasila sebagai falsafah, ideologi, dan dasar negara.
+    \item \textbf{Identitas Instrumental:} UUD NRI 1945 dan instrumen formal simbol kenegaraan sebagaimana diatur dalam \textbf{UU No. 24 Tahun 2009} (Bendera Merah Putih, Bahasa Indonesia, Lambang Garuda Pancasila dengan semboyan Bhinneka Tunggal Ika, serta Lagu Kebangsaan Indonesia Raya).
+    \item \textbf{Identitas Alamiah:} Kondisi geografis negara kepulauan (\textit{archipelago}) dan kemajemukan demografis suku, budaya, serta agama.
+  \end{enumerate}
+\end{itemize}
+\end{conceptbox}
+
+\begin{kasusbox}[2.2 Dinamika dan Tantangan Identitas Nasional di Era Global]
+\begin{itemize}
+  \item \textbf{Tantangan Eksternal (Globalisasi):} Arus informasi tanpa batas, hegemoni budaya populer global, gaya hidup individualis dan konsumtif yang menggeser tradisi gotong royong dan kesantunan lokal.
+  \item \textbf{Tantangan Internal:} Memudarnya rasa bangga terhadap produk dalam negeri, menurunnya pemahaman makna simbol negara (misalnya penghormatan bendera dianggap sekadar seremonial), dan menguatnya polarisasi berbasis identitas primordial di ruang digital.
+  \item \textbf{Urgensi Identitas:} Menjadi benteng pertahanan kultural (\textit{cultural buffer}), sumber kohesi sosial di tengah krisis, dan daya tawar martabat bangsa (\textit{national dignity}) dalam relasi geopolitik global.
+\end{itemize}
+\end{kasusbox}
+
+% =========================================================================
+\section{Bab III: Urgensi Integrasi Nasional Parameter Persatuan}
+% =========================================================================
+
+\begin{conceptbox}[3.1 Definisi dan 5 Jenis Integrasi Menurut Myron Weiner]
+Integrasi nasional adalah proses menyatukan bagian-bagian, unsur-unsur, atau kelompok-kelompok yang terpisah dalam masyarakat menjadi satu kesatuan bangsa yang bulat dan utuh.
+\textbf{Myron Weiner} memetakan integrasi ke dalam lima tipe fundamental:
+\begin{enumerate}
+  \item \textbf{Integrasi Bangsa:} Penyatuan aneka kelompok budaya dan sosial ke dalam satu wilayah bersama dan satu identitas nasional.
+  \item \textbf{Integrasi Wilayah:} Pembentukan kekuasaan otoritas nasional yang sah di atas wilayah geografis dan kelompok politik yang lebih kecil.
+  \item \textbf{Integrasi Nilai:} Konsensus kolektif terhadap nilai-nilai dasar normatif yang dijadikan landasan tatanan bernegara (Pancasila).
+  \item \textbf{Integrasi Elit-Massa:} Kemampuan menjembatani jarak psikologis, ekonomi, dan politik antara kelompok elit penguasa dengan massa rakyat biasa.
+  \item \textbf{Integrasi Tingkah Laku (Tindakan Integratif):} Kesediaan bekerja sama dan taat pada konsensus aturan hukum guna mencapai tujuan bersama secara damai.
+\end{enumerate}
+\end{conceptbox}
+
+\begin{conceptbox}[3.2 Dua Dimensi Integrasi dan Model Perkembangan Sejarah]
+Integrasi beroperasi dalam dua lintasan dimensi:
+\begin{itemize}
+  \item \textbf{Dimensi Vertikal:} Hubungan antara pemerintah dan rakyat. Hambatannya adalah jurang ketimpangan sosial, ketidakadilan alokasi sumber daya, dan krisis legitimasi/kepercayaan publik terhadap kebijakan elit.
+  \item \textbf{Dimensi Horizontal:} Hubungan antarkelompok masyarakat (suku, ras, agama, antargolongan). Hambatannya adalah primordialisme sempit, prasangka prasangka etnis, dan konflik komunal berbasis SARA.
+\end{itemize}
+\textbf{Model Sejarah Integrasi Indonesia (Suroyo, 2002):}
+\begin{enumerate}
+  \item \textbf{Model Integrasi Imperium Majapahit:} Konsentris dan berbasis upeti/pemberian tanda tunduk dari kerajaan vasal, belum berstruktur negara modern.
+  \item \textbf{Model Integrasi Kolonial Hindia Belanda (\textit{Pax Neerlandica}):} Menyatukan wilayah kepulauan melalui penaklukan militer dan hukum kolonial yang koersif/menindas.
+  \item \textbf{Model Integrasi Nasional Indonesia:} Penyatuan sukarela, sadar, berkeadilan, dan demokratis melalui proklamasi kemerdekaan yang diikat oleh semboyan Bhinneka Tunggal Ika.
+\end{enumerate}
+\end{conceptbox}
+
+\begin{examtipbox}[Kunci Analisis Dosen untuk Bab III]
+Perhatikan fenomena kontemporer seperti \textit{brain drain} (anak muda enggan kembali ke tanah air) atau apatisme sosial terhadap negara. Dalam kacamata Myron Weiner, hal tersebut merupakan gejala rapuhnya \textbf{integrasi vertikal} dan \textbf{integrasi nilai}. Integrasi nasional tidak boleh hanya dipandang sebagai batas patok wilayah fisik, melainkan komitmen batiniah warga negara karena merasa dilindungi dan diperlakukan adil oleh negaranya.
+\end{examtipbox}
+
+% =========================================================================
+\section{Bab IV: Nilai \& Norma Konstitusional UUD NRI 1945}
+% =========================================================================
+
+\begin{conceptbox}[4.1 Hakikat Konstitusi dan Gagasan Konstitusionalisme]
+Konstitusi berasal dari kata Prancis \textit{constituer} (membentuk), kata Inggris \textit{constitution}, dan Belanda \textit{grondwet} (hukum dasar).
+\begin{itemize}
+  \item \textbf{Lord Bryce:} Kerangka masyarakat politik (negara) yang diatur melalui dan oleh hukum, di mana hukum menetapkan lembaga-lembaga tetap serta fungsi dan hak-haknya.
+  \item \textbf{C.F. Strong:} Sekumpulan asas-asas yang mengatur kekuasaan pemerintahan, hak-hak dari pihak yang diperintah, dan hubungan antara yang memerintah dan yang diperintah.
+  \item \textbf{Esensi Konstitusionalisme:} Doktrin hukum yang menegaskan bahwa kekuasaan penguasa negara harus dibatasi secara tegas (\textit{limited government}) agar tidak terjadi kesewenang-wenangan (\textit{abuse of power}) dan penindasan hak asasi manusia. Konstitusi adalah sarana pembatas kekuasaan.
+\end{itemize}
+\textbf{Tiga Fungsi Pokok Konstitusi:}
+\begin{enumerate}
+  \item Pembatas kekuasaan dan pencegah kesewenang-wenangan penguasa.
+  \item Piagam jaminan hak-hak asasi warga negara.
+  \item Landasan legitimasi kekuasaan dan sumber hukum tertinggi (\textit{supreme law of the land}).
+\end{enumerate}
+\end{conceptbox}
+
+\begin{conceptbox}[4.2 Dinamika Sejarah dan Perubahan (Amandemen) UUD 1945]
+Sejarah pemberlakuan konstitusi di Indonesia:
+\begin{enumerate}
+  \item UUD 1945 Masa Awal Kemerdekaan: 18 Agustus 1945 s.d. 27 Desember 1949.
+  \item Konstitusi RIS 1949: 27 Desember 1949 s.d. 17 Agustus 1950 (Bentuk negara serikat/federasi).
+  \item UUDS 1950: 17 Agustus 1950 s.d. 5 Juli 1959 (Sistem pemerintahan parlementer).
+  \item UUD 1945 Orde Lama \& Orde Baru: Dekrit Presiden 5 Juli 1959 s.d. 1999 (Mengalami sentralisasi kekuasaan eksekutif/otoriter).
+  \item UUD NRI 1945 Era Reformasi (Hasil Amandemen 1999--2002): Mengalami empat kali amandemen bertahap pada Sidang Tahunan MPR dengan kesepakatan dasar:
+  \begin{itemize}
+    \item Tidak mengubah Pembukaan UUD 1945.
+    \item Tetap mempertahankan Negara Kesatuan Republik Indonesia (NKRI).
+    \item Mempertegas sistem pemerintahan presidensial.
+    \item Menghapus penjelasan UUD 1945 dan memasukkan hal normatif ke pasal-pasal.
+    \item Melakukan perubahan secara adendum.
+  \end{itemize}
+\end{enumerate}
+\end{conceptbox}
+
+\begin{conceptbox}[4.3 Hierarki Peraturan dan Pengujian Norma Hukum (\textit{Judicial Review})]
+Berdasarkan \textbf{UU No. 12 Tahun 2011} jo. \textbf{UU No. 13 Tahun 2022}, hierarki tata urutan perundang-undangan di Indonesia adalah:
+\begin{enumerate}
+  \item UUD Negara Republik Indonesia Tahun 1945 (Tingkat tertinggi).
+  \item Ketetapan Majelis Permusyawaratan Rakyat (TAP MPR).
+  \item Undang-Undang / Peraturan Pemerintah Pengganti Undang-Undang (UU/Perppu).
+  \item Peraturan Pemerintah (PP).
+  \item Peraturan Presiden (Perpres).
+  \item Peraturan Daerah Provinsi (Perda Provinsi).
+  \item Peraturan Daerah Kabupaten/Kota (Perda Kab/Kota).
+\end{enumerate}
+\textbf{Mekanisme Pengujian Peraturan (\textit{Judicial Review}):}
+\begin{itemize}
+  \item \textbf{Mahkamah Konstitusi (MK):} Menguji Undang-Undang (UU) terhadap UUD NRI 1945 (Pasal 24C ayat 1).
+  \item \textbf{Mahkamah Agung (MA):} Menguji peraturan perundang-undangan di bawah undang-undang terhadap undang-undang (Pasal 24A ayat 1).
+\end{itemize}
+\end{conceptbox}
+
+% =========================================================================
+\section{Bab V: Harmoni Kewajiban \& Hak Negara dan Warga Negara}
+% =========================================================================
+
+\begin{conceptbox}[5.1 Hakikat Filosofis: Tradisi Barat vs. Tradisi Kebangsaan Indonesia]
+\begin{itemize}
+  \item \textbf{Tradisi Barat (Individualistis):} Berawal dari perjuangan melawan absolutisme kekuasaan raja, sehingga hak mendahului kewajiban. Tonggak sejarah: Magna Charta (1215), Bill of Rights Inggris (1689), Deklarasi Kemerdekaan AS (1776), Revolusi Prancis (1789), Franklin D. Roosevelt \textit{Four Freedoms} (1941), hingga Deklarasi Universal HAM PBB (1948).
+  \item \textbf{Tradisi Kebangsaan Indonesia (Kolektivitas \& Keseimbangan):} Berakar dari filsafat Pancasila dan budaya ketimuran. Hak dan kewajiban tidak dilihat sebagai dua kutub yang bermusuhan, melainkan kesatuan dialektis yang harmonis. Kewajiban moral dan sosial mendahului atau berjalan seimbang dengan hak individu (\textit{keseimbangan antara hak asasi dan kewajiban asasi}).
+  \item \textbf{Sumber Sosiologis (Wirutomo, 2001):} Pasca-reformasi terjadi pergeseran dari otokrasi Orba menuju oligarki politik. Gejolak sosial marak karena euforia kebebasan membuat masyarakat menuntut hak setinggi-tingginya, namun melupakan pemenuhan kewajiban sosial dan ketaatan hukum.
+\end{itemize}
+\end{conceptbox}
+
+\begin{conceptbox}[5.2 Pemetaan Aturan Dasar UUD NRI 1945 tentang Hak dan Kewajiban]
+Aturan dasar dalam batang tubuh UUD 1945 mengatur harmoni relasi negara dan warga negara:
+\begin{enumerate}
+  \item \textbf{Bidang Agama (Pasal 29):}
+  \begin{itemize}
+    \item Ayat (1): Negara berdasar atas Ketuhanan Yang Maha Esa.
+    \item Ayat (2): Negara menjamin kemerdekaan tiap penduduk untuk memeluk agamanya masing-masing dan beribadat menurut agamanya dan kepercayaannya itu.
+  \end{itemize}
+  \item \textbf{Bidang Pendidikan dan Kebudayaan (Pasal 31 \& 32):}
+  \begin{itemize}
+    \item Pasal 31 ayat (1): Hak setiap warga negara mendapatkan pendidikan.
+    \item Pasal 31 ayat (2): Kewajiban warga negara mengikuti pendidikan dasar dan kewajiban pemerintah membiayainya.
+    \item Pasal 31 ayat (4): Mandat alokasi anggaran pendidikan sekurang-kurangnya 20\% dari APBN dan APBD.
+    \item Pasal 32 ayat (1) \& (2): Negara memajukan kebudayaan nasional serta menghormati bahasa daerah sebagai kekayaan nasional.
+  \end{itemize}
+  \item \textbf{Bidang Perekonomian dan Kesejahteraan Sosial (Pasal 33 \& 34):}
+  \begin{itemize}
+    \item Pasal 33: Perekonomian disusun sebagai usaha bersama berdasar asas kekeluargaan; cabang produksi penting dan bumi, air, kekayaan alam dikuasai negara untuk kemakmuran rakyat.
+    \item Pasal 34: Fakir miskin dan anak-anak yang terlantar dipelihara oleh negara; negara mengembangkan sistem jaminan sosial bagi seluruh rakyat.
+  \end{itemize}
+  \item \textbf{Bidang Pertahanan dan Keamanan (Pasal 27 ayat 3 \& Pasal 30):}
+  \begin{itemize}
+    \item Pasal 27 ayat (3): Setiap warga negara berhak dan wajib ikut serta dalam upaya pembelaan negara.
+    \item Pasal 30 ayat (1)--(5): Sistem Pertahanan dan Keamanan Rakyat Semesta (Sishankamrata) dengan TNI dan Polri sebagai kekuatan utama, dan rakyat sebagai kekuatan pendukung.
+  \end{itemize}
+  \item \textbf{Hak Asasi Manusia dan Batasan Sah Konstitusi (Bab XA Pasal 28A s.d. 28J):}\\
+  HAM dijamin secara ekstensif, namun ditutup oleh klausul kunci pembatasan:
+  \begin{itemize}
+    \item \textbf{Pasal 28J ayat (1):} Setiap orang wajib menghormati hak asasi orang lain dalam tertib kehidupan bermasyarakat, berbangsa, dan bernegara.
+    \item \textbf{Pasal 28J ayat (2):} Dalam menjalankan hak dan kebebasannya, setiap orang wajib tunduk kepada pembatasan yang ditetapkan dengan undang-undang semata-mata untuk menjamin pengakuan serta penghormatan atas hak orang lain dan untuk memenuhi tuntutan yang adil sesuai pertimbangan moral, nilai-nilai agama, keamanan, dan ketertiban umum.
+  \end{itemize}
+\end{enumerate}
+\end{conceptbox}
+
+% =========================================================================
+\section{Tabel Matriks Perbandingan Ringkas (Fast Review)}
+% =========================================================================
+
+\begin{table}[h!]
+\small
+\centering
+\begin{tabularx}{\textwidth}{p{3.2cm} p{5.5cm} Y}
+\toprule
+\textbf{Bab / Topik} & \textbf{Kata Kunci Inti \& Tokoh} & \textbf{Poin Evaluasi / Potensi Soal Ujian} \\
+\midrule
+\textbf{Bab I: Landasan PKn} & M. Nu'man Somantri, John Cogan, UU 20/2003, UU 12/2012, \textit{civic disposition}. & Mengapa sarjana butuh kecerdasan kewargaan di tengah disrupsi teknologi digital. \\
+\addlinespace
+\textbf{Bab II: Identitas Nasional} & Koento Wibisono, UU 24/2009, identitas primer vs sekunder, fundamental-instrumental-alamiah. & Analisis erosi budaya lokal akibat globalisasi dan strategi merawat jati diri kebangsaan. \\
+\addlinespace
+\textbf{Bab III: Integrasi Nasional} & Myron Weiner (5 tipe integrasi), vertikal vs horizontal, Suroyo (3 model sejarah integrasi). & Konflik komunal/SARA, krisis kepercayaan kepada elit politik, dan fenomena disintegrasi sosial. \\
+\addlinespace
+\textbf{Bab IV: Konstitusi UUD 1945} & C.F. Strong, Lord Bryce, konstitusionalisme (\textit{limited power}), amandemen, UU 12/2011, MK vs MA. & Peran Mahkamah Konstitusi dalam menjaga konsistensi norma dan batas kekuasaan presiden. \\
+\addlinespace
+\textbf{Bab V: Harmoni Hak \& Kewajiban} & Wirutomo (oligarki vs anarki), Pasal 27(3), 29, 31, 33, 34, pembatasan sah Pasal 28J ayat 2. & Hak bersuara di media sosial berhadapan dengan kewajiban menjaga ketertiban umum \& UU ITE. \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+% =========================================================================
+\section{Bank Soal Prediksi UTS, Analisis Kasus, \& Model Jawaban Nilai A}
+% =========================================================================
+
+\begin{examtipbox}[Format Baku Menjawab Soal Esai Dosen MKWK UGM (Metode 3 Tahap)]
+Untuk mendapatkan skor maksimal (Nilai A), bangun kerangka jawaban dengan struktur:
+\begin{enumerate}
+  \item \textbf{Tahap 1 (Landasan Teoretis):} Sebutkan konsep dasar, definisi tokoh (Weiner/Koento Wibisono/C.F. Strong), dan pasal konstitusi yang relevan.
+  \item \textbf{Tahap 2 (Bedah Fakta \& Dialektika Kasus):} Uraikan akar persoalan di lapangan secara objektif, tunjukkan kontradiksi antara norma ideal (\textit{das Sollen}) dan realitas nyata (\textit{das Sein}).
+  \item \textbf{Tahap 3 (Sintesis Solutif \& Peran Sarjana):} Rumuskan solusi konkret yang berakar pada nilai Pancasila dan letakkan peran strategis mahasiswa/profesional.
+\end{enumerate}
+\end{examtipbox}
+
+% --- SOAL 1 ---
+\begin{soalbox}[Soal Esai 1: Hakikat PKn dan Tantangan Etika Profesi Teknologi (Bab I)]
+\textbf{Soal:} Perkembangan kecerdasan buatan (\textit{Artificial Intelligence}) dan otomatisasi menghadirkan disrupsi besar di dunia kerja. Mengapa seorang calon sarjana di bidang teknologi terapan tetap diwajibkan menempuh Pendidikan Kewarganegaraan? Analisis keterkaitan antara \textit{civic virtue} dengan tanggung jawab etis seorang profesional!
+
+\tcblower
+\textbf{Model Jawaban Nilai A:}
+\begin{enumerate}
+  \item \textbf{Landasan Teori:} Merujuk pada pemikiran M. Nu'man Somantri (2001) dan amanat UU No. 12 Tahun 2012 Pasal 35 ayat (3), PKn bertujuan membentuk sarjana yang memiliki rasa kebangsaan, cinta tanah air, serta watak demokratis. PKn menanamkan tiga pilar kompetensi: pengetahuan kewargaan (\textit{civic knowledge}), keterampilan kewargaan (\textit{civic skills}), dan disposisi/karakter kewargaan (\textit{civic disposition}).
+  \item \textbf{Bedah Realitas Kasus:} Teknologi tidak beroperasi di ruang hampa nilai. Pengembang sistem kecerdasan buatan memegang kuasa atas data pribadi jutaan warga, algoritma opini publik, dan otomasi pekerjaan. Tanpa etika kewargaan, teknologi rentan disalahgunakan untuk spionase industri, eksploitasi data ilegal, atau manipulasi politik yang merusak demokrasi. Ketiadaan karakter kewargaan menghasilkan teknokrat cerdas namun amoral.
+  \item \textbf{Sintesis Solutif:} Calon sarjana harus menyeimbangkan kemahiran teknis (\textit{hard skills}) dengan kebajikan publik (\textit{civic virtue}). Dalam konteks profesional, sarjana teknologi wajib mengamalkan nilai Pancasila dengan memastikan sistem yang dibangun menjamin keadilan sosial (Sila V), menghormati privasi dan martabat kemanusiaan (Sila II), serta melindungi kedaulatan digital bangsa (Sila III).
+\end{enumerate}
+\end{soalbox}
+
+% --- SOAL 2 ---
+\begin{soalbox}[Soal Esai 2: Identitas Nasional di Tengah Gelombang Disrupsi Budaya Digital (Bab II)]
+\textbf{Soal:} Di era media sosial, generasi muda lebih akrab dengan tren budaya pop global (budaya barat, Korea, dsb.) dibandingkan kebudayaan nusantara. Sebagian pihak menganggap ini tanda pudarnya identitas nasional. Bagaimanakah Anda menganalisis fenomena ini menggunakan pembedaan identitas primer dan sekunder? Apakah globalisasi mutlak menghancurkan identitas nasional?
+
+\tcblower
+\textbf{Model Jawaban Nilai A:}
+\begin{enumerate}
+  \item \textbf{Landasan Teori:} Identitas nasional dibangun di atas dialektika identitas primer (kultural-etnis yang melekat sejak lahir) dan identitas sekunder (kesepakatan politik kebangsaan yang lahir pasca-Sumpah Pemuda 1928 dan Proklamasi 1945). Menurut Koento Wibisono (2005), identitas nasional bersifat dinamis dan terbuka, bukan entitas statis yang tertutup dari dunia luar.
+  \item \textbf{Bedah Realitas Kasus:} Ketertarikan generasi muda terhadap tren global bukanlah kematian identitas nasional, melainkan bentuk adaptasi kultural dalam masyarakat modern. Hal yang berbahaya terjadi apabila terjadi ketercerabutan akar budaya (\textit{cultural alienation}), yaitu ketika generasi muda malu berbahasa Indonesia, meremehkan produk lokal, dan kehilangan empati gotong royong akibat hegemoni individualisme ekstrem.
+  \item \textbf{Sintesis Solutif:} Strategi pelestarian identitas tidak boleh bersifat indoktrinatif atau defensif semata. Solusinya adalah revitalisasi kreatif: mengemas identitas instrumental dan kekayaan tradisi lokal ke dalam medium kontemporer (desain modern, film, musik, dan konten digital edukatif). Identitas sekunder seperti komitmen persatuan dan etika Pancasila harus dijadikan filter kritis dalam mengadopsi budaya global tanpa kehilangan jati diri keindonesiaan.
+\end{enumerate}
+\end{soalbox}
+
+% --- SOAL 3 ---
+\begin{soalbox}[Soal Esai 3: Integrasi Vertikal, Elit-Massa, dan Fenomena Apatisme Generasi Muda (Bab III)]
+\textbf{Soal:} Myron Weiner membedakan lima jenis integrasi, termasuk integrasi vertikal (elit-massa). Di Indonesia, marak fenomena generasi muda terdidik yang enggan peduli pada politik (\textit{political apathy}) atau memilih berkarier di luar negeri karena merasa haknya diabaikan oleh para pengambil kebijakan. Analisislah fenomena ini dalam kerangka integrasi nasional!
+
+\tcblower
+\textbf{Model Jawaban Nilai A:}
+\begin{enumerate}
+  \item \textbf{Landasan Teori:} Myron Weiner mendefinisikan integrasi vertikal/elit-massa sebagai kemampuan menghubungkan kaum elit penguasa dengan massa rakyat guna mempersempit jurang perbedaan aspirasi dan orientasi hidup. Integrasi nasional menuntut adanya rasa saling percaya (\textit{mutual trust}) antara rakyat dan penyelenggara negara.
+  \item \textbf{Bedah Realitas Kasus:} Fenomena apatisme dan pelarian modal intelektual (\textit{brain drain}) adalah indikator merenggangnya integrasi vertikal. Ketika para pembuat kebijakan terjebak dalam kepentingan oligarki, praktik korupsi, dan mengabaikan meritokrasi, kelompok generasi muda merasa kerja keras dan kontribusinya tidak dihargai di dalam negeri. Disintegrasi vertikal terjadi bukan karena ancaman senjata militer, melainkan akibat krisis keadilan dan pudarnya harapan masa depan.
+  \item \textbf{Sintesis Solutif:} Pemerintah harus memulihkan legitimasi moral dengan membuka ruang partisipasi publik yang bermakna (\textit{meaningful participation}), menegakkan hukum tanpa pandang bulu, dan menciptakan ekosistem riset/profesional yang transparan. Bagi mahasiswa, sikap apatis harus diubah menjadi partisipasi kritis berintegritas, baik melalui jalur profesional, advokasi sosial, maupun pengawasan kebijakan publik.
+\end{enumerate}
+\end{soalbox}
+
+% --- SOAL 4 ---
+\begin{soalbox}[Soal Esai 4: Konstitusionalisme dan Batas Kekuasaan Negara (Bab IV)]
+\textbf{Soal:} Mengapa sebuah negara hukum modern wajib memiliki konstitusi yang membatasi kekuasaan penguasa? Bagaimana sistem ketatanegaraan Indonesia pasca-amandemen UUD 1945 mencegah kembali munculnya pemerintahan otoriter sebagaimana terjadi pada era sebelumnya?
+
+\tcblower
+\textbf{Model Jawaban Nilai A:}
+\begin{enumerate}
+  \item \textbf{Landasan Teori:} Doktrin konstitusionalisme (C.F. Strong dan Lord Bryce) menyatakan bahwa esensi utama konstitusi adalah pembatasan kekuasaan pemerintah (\textit{limited government}). Lord Acton memperingatkan bahwa kekuasaan cenderung korup, dan kekuasaan mutlak pasti korup secara mutlak (\textit{power tends to corrupt, and absolute power corrupts absolutely}).
+  \item \textbf{Bedah Realitas Kasus:} Sebelum amandemen (masa Orde Lama dan Orde Baru), UUD 1945 bersifat sangat \textit{executive-heavy} (terpusat berlebihan pada presiden) tanpa pembatasan masa jabatan yang eksplisit dan tanpa mekanisme checks and balances yang memadai. Akibatnya, presiden dapat memegang kendali tanpa batas waktu yang berujung pada otoritarianisme, penindasan oposisi, dan pelanggaran HAM.
+  \item \textbf{Sintesis Solutif:} Empat tahap amandemen UUD 1945 (1999--2002) menata ulang sistem kelembagaan secara fundamental:
+  \begin{itemize}
+    \item Pembatasan masa jabatan Presiden maksimal 2 periode (Pasal 7).
+    \item Pergeseran kekuasaan membentuk undang-undang dari Presiden ke DPR (Pasal 20 ayat 1).
+    \item Pemilihan Presiden dan Wakil Presiden secara langsung oleh rakyat (Pasal 6A).
+    \item Pembentukan lembaga pengimbang kekuasaan baru: Mahkamah Konstitusi (MK) untuk menguji produk UU dan Dewan Perwakilan Daerah (DPD).
+  \end{itemize}
+  Dengan arsitektur ini, kekuasaan tidak lagi bertumpu pada satu tangan, melainkan dikontrol oleh hukum konstitusi yang demokratis.
+\end{enumerate}
+\end{soalbox}
+
+% --- SOAL 5 ---
+\begin{soalbox}[Soal Esai 5: Harmoni Hak Asasi dan Pembatasan Sah Konstitusi Pasal 28J (Bab V)]
+\textbf{Soal:} Seseorang mengunggah konten di media sosial yang menghina simbol agama lain dengan dalih menggunakan hak atas kebebasan berekspresi (Pasal 28E ayat 3 UUD 1945). Bagaimana Anda membedah kasus ini berdasarkan prinsip harmoni hak dan kewajiban serta ketentuan Pasal 28J ayat (2) UUD NRI 1945?
+
+\tcblower
+\textbf{Model Jawaban Nilai A:}
+\begin{enumerate}
+  \item \textbf{Landasan Teori:} UUD NRI 1945 menganut prinsip keseimbangan hak dan kewajiban asasi. Hak asasi manusia tidak bersifat mutlak tanpa batas (\textit{derogable rights}), kecuali kelompok hak non-derogable tertentu (seperti hak hidup, hak bebas dari penyiksaan, hak bebas dari perbudakan menurut Pasal 28I ayat 1). Hak menyatakan pendapat diatur dalam Pasal 28E ayat (3) dan Pasal 28F, namun terikat pada kewajiban asasi dalam Pasal 28J.
+  \item \textbf{Bedah Realitas Kasus:} Tindakan menghina simbol agama tidak dapat dibenarkan menggunakan payung kebebasan berpendapat. Dalih tersebut cacat hukum dan logika karena menabrak hak konstitusional orang lain untuk beribadah dan memeluk agamanya secara damai (Pasal 29 ayat 2). Kebebasan individu berakhir ketika bersentuhan dengan kebebasan dan kehormatan orang lain.
+  \item \textbf{Sintesis Solutif:} \textbf{Pasal 28J ayat (2) UUD 1945} menegaskan bahwa dalam menjalankan haknya, setiap orang wajib tunduk kepada pembatasan yang ditetapkan dengan undang-undang semata-mata untuk menjamin pengakuan atas hak orang lain serta memenuhi tuntutan moral, nilai-nilai agama, keamanan, dan ketertiban umum. Negara berhak dan berwenang membatasi ujaran kebencian melalui instrumen hukum positif demi menjaga keutuhan integrasi sosial dan kerukunan nasional.
+\end{enumerate}
+\end{soalbox}
+
+% =========================================================================
+\section{Rumus Singkat \& Trik Hafalan Kilat (15 Menit Sebelum Masuk Ruang Ujian)}
+% =========================================================================
+
+\begin{examtipbox}[Ringkasan Poin-Poin Kunci di Kepala]
+\begin{enumerate}
+  \item \textbf{Bab I:} Somantri (demokrasi politik + berpikir kritis); Cogan (\textit{civic} vs \textit{citizenship}); UU 20/2003 (rasa kebangsaan); UU 12/2012 Pasal 35(3) (wajib PT); Tiga sumber: Historis, Sosiologis, Politis.
+  \item \textbf{Bab II:} Koento Wibisono (manifestasi nilai budaya pembeda); Identitas Primer (etnis/lokal) vs Sekunder (nasional); Unsur: Fundamental (Pancasila), Instrumental (UU 24/2009: Bendera, Bahasa, Lambang, Lagu), Alamiah (negara kepulauan).
+  \item \textbf{Bab III:} Myron Weiner (5 jenis: Bangsa, Wilayah, Nilai, Elit-Massa, Tingkah Laku); Vertikal (pemerintah vs rakyat) vs Horizontal (antarkelompok/SARA); Suroyo (Majapahit, Pax Neerlandica, NKRI demokratis).
+  \item \textbf{Bab IV:} Konstitusionalisme = Pembatasan kekuasaan (\textit{limited government}); Lord Bryce \& C.F. Strong; 4 kali Amandemen (1999--2002); Hierarki UU 12/2011; MK uji UU ke UUD, MA uji Peraturan di bawah UU ke UU.
+  \item \textbf{Bab V:} Tradisi Barat (hak mendahului kewajiban) vs Tradisi Indonesia (harmoni hak dan kewajiban); Wirutomo (oligarki pasca-otokrasi); Pasal 27(3) \& 30 (bela negara); Pasal 29 (agama); Pasal 31 (pendidikan); Pasal 33 \& 34 (ekonomi \& sosial); Kunci emas pembatasan HAM: \textbf{Pasal 28J ayat (2)}.
+\end{enumerate}
+\end{examtipbox}
+
+\vspace{3mm}
+\begin{center}
+  \rule{0.6\textwidth}{0.5pt}\\[2mm]
+  {\small\bfseries\color{ugmblue}Selamat Menempuh UTS! Junjung Tinggi Kejujuran, Logika Kritis, \& Integritas Mahasiswa UGM!}\\[1mm]
+  {\footnotesize\color{gray}Dokumen ini disusun dari Buku Ajar Resmi Dikti \& Modul Pembelajaran MKWK Kemendikbudristek untuk keperluan belajar mandiri.}
+\end{center}
+
+\end{document}

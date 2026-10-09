@@ -19,6 +19,10 @@ PPKN/
 │   ├── Ringkasan_UTS_Pendidikan_Pancasila.tex     # Master source code LaTeX
 │   └── silabus-rpkps.pdf                          # RPKPS resmi kelas Pendidikan Pancasila UGM
 │
+├── uts-kewarganegaraan/                           # 🎯 Modul Persiapan Ujian Tengah Semester (Kewarganegaraan)
+│   ├── Ringkasan_UTS_Pendidikan_Kewarganegaraan.pdf # Ringkasan komprehensif Bab 1–5 & bank soal esai (8 hal)
+│   └── Ringkasan_UTS_Pendidikan_Kewarganegaraan.tex # Master source code LaTeX
+│
 ├── presentasi-pkn/                                # 🗣️ Berkas Presentasi Kelompok (Integrasi Nasional)
 │   ├── Integrasi Nasional.pdf                     # File final presentasi (Canva export, 22 slide)
 │   ├── script.md                                  # Naskah bicara (speaking script) Hafidz (Slide 20–23)
@@ -55,6 +59,7 @@ PPKN/
 
 ## Panduan Cepat
 
+- **Persiapan UTS Kewarganegaraan (PDF Siap Baca):** Buka [uts-kewarganegaraan/Ringkasan_UTS_Pendidikan_Kewarganegaraan.pdf](uts-kewarganegaraan/Ringkasan_UTS_Pendidikan_Kewarganegaraan.pdf)
 - **Persiapan UTS Pancasila (PDF Siap Baca):** Buka [uts-pancasila/Ringkasan_UTS_Pendidikan_Pancasila.pdf](uts-pancasila/Ringkasan_UTS_Pendidikan_Pancasila.pdf)
 - **Melihat RPKPS Kelas:** Buka [uts-pancasila/silabus-rpkps.pdf](uts-pancasila/silabus-rpkps.pdf) atau [silabus.md](silabus.md)
 - **Materi Presentasi Kelompok:** Buka [presentasi-pkn/Integrasi Nasional.pdf](presentasi-pkn/Integrasi%20Nasional.pdf)
